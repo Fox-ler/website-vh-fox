@@ -8,35 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 20% 98%;
+    --foreground: 140 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 140 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 140 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 142 35% 25%;
+    --primary-foreground: 45 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 25% 92%;
+    --secondary-foreground: 140 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 15% 95%;
+    --muted-foreground: 140 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 200 60% 45%;
+    --accent-foreground: 45 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 142 35% 25%;
 
-    --radius: 0.5rem;
+    /* Agricultural Data Science Theme */
+    --agricultural-green: 142 45% 35%;
+    --data-blue: 200 65% 50%;
+    --earth-brown: 25 35% 55%;
+    --nature-light: 90 25% 85%;
+    --tech-accent: 200 100% 65%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--agricultural-green)) 0%, hsl(var(--data-blue)) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(var(--nature-light)) 0%, hsl(var(--background)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--nature-light)) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 6px -1px hsl(var(--agricultural-green) / 0.1), 0 2px 4px -1px hsl(var(--agricultural-green) / 0.06);
+    --shadow-medium: 0 10px 15px -3px hsl(var(--agricultural-green) / 0.1), 0 4px 6px -2px hsl(var(--agricultural-green) / 0.05);
+    --shadow-large: 0 25px 50px -12px hsl(var(--agricultural-green) / 0.25);
+    
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
