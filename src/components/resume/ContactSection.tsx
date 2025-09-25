@@ -8,7 +8,7 @@ const ContactSection = () => {
       icon: Mail,
       label: "Email Address",
       value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      href: "mailto:your.email@example.com?subject=Agricultural Data Science Opportunity",
       color: "data-blue"
     },
     {
@@ -40,21 +40,36 @@ const ContactSection = () => {
       label: "Download CV",
       description: "Get a PDF copy of my complete resume",
       variant: "default" as const,
-      className: "bg-agricultural-green hover:bg-agricultural-green/90 text-white"
+      className: "bg-agricultural-green hover:bg-agricultural-green/90 text-white",
+      onClick: () => {
+        // Placeholder for PDF resume - replace 'your-resume.pdf' with actual file
+        const link = document.createElement('a');
+        link.href = '/your-resume.pdf';
+        link.download = 'Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
     },
     {
       icon: Send,
       label: "Send Message",
       description: "Reach out for opportunities or collaboration",
       variant: "outline" as const,
-      className: "border-data-blue text-data-blue hover:bg-data-blue/5"
+      className: "border-data-blue text-data-blue hover:bg-data-blue/5",
+      onClick: () => {
+        window.location.href = "mailto:your.email@example.com?subject=Agricultural Data Science Opportunity&body=Hello, I'm interested in discussing potential opportunities in agricultural data science.";
+      }
     },
     {
       icon: Linkedin,
       label: "Connect on LinkedIn",
       description: "Let's build our professional network",
       variant: "outline" as const,
-      className: "border-tech-accent text-tech-accent hover:bg-tech-accent/5"
+      className: "border-tech-accent text-tech-accent hover:bg-tech-accent/5",
+      onClick: () => {
+        window.open("https://linkedin.com/in/yourprofile", "_blank");
+      }
     }
   ];
 
@@ -108,6 +123,7 @@ const ContactSection = () => {
                     variant={action.variant}
                     size="lg"
                     className={`h-auto p-6 flex-col gap-3 ${action.className}`}
+                    onClick={action.onClick}
                   >
                     <IconComponent className="w-6 h-6" />
                     <div className="text-center">
