@@ -60,7 +60,8 @@ const AboutSection = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Currently pursuing my Bachelor's degree while gaining real-world experience in data 
                 intelligence at Agrifirm, I'm passionate about using technology to solve agricultural 
-                challenges and improve farming efficiency.
+                challenges and improve farming efficiency. I have a strong curiosity for research and 
+                enjoy exploring innovative solutions through scientific inquiry and evidence-based approaches.
               </p>
             </div>
             <div>

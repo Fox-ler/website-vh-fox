@@ -38,7 +38,8 @@ const SkillsSection = () => {
         { name: "Agricultural Technology", level: "Advanced", description: "Lely robots, automated systems" },
         { name: "Animal Husbandry", level: "Expert", description: "Animal health, breeding, nutrition" },
         { name: "Farm Management", level: "Advanced", description: "Operations, efficiency optimization" },
-        { name: "Process Improvement", level: "Advanced", description: "Workflow optimization, innovation" }
+        { name: "Process Improvement", level: "Advanced", description: "Workflow optimization, innovation" },
+        { name: "Agricultural Research", level: "Advanced", description: "Experimental design, data collection, analysis" }
       ]
     },
     {
@@ -53,7 +54,9 @@ const SkillsSection = () => {
         { name: "Teamwork", level: "Expert", description: "Collaboration, leadership" },
         { name: "Problem Solving", level: "Expert", description: "Analytical thinking, innovation" },
         { name: "Dashboard Development", level: "Advanced", description: "Streamlit, Power BI, data visualization" },
-        { name: "Project Adaptability", level: "Expert", description: "Quick project takeover, flexible teamwork" }
+        { name: "Project Adaptability", level: "Expert", description: "Quick project takeover, flexible teamwork" },
+        { name: "Research Methodology", level: "Advanced", description: "Experimental design, literature review" },
+        { name: "Scientific Writing", level: "Advanced", description: "Research papers, technical documentation" }
       ]
     }
   ];

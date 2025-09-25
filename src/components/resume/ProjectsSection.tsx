@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github, BarChart3, Leaf, Target } from 'lucide-react';
+import { ExternalLink, Github, BarChart3, Leaf, Target, Sprout, Activity, BookOpen } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
@@ -40,23 +40,56 @@ const ProjectsSection = () => {
       color: "data-blue"
     },
     {
-      title: "Agricultural Data Outlier Analysis",
-      description: "Comprehensive analysis project focused on identifying and analyzing outliers in agricultural production data to improve quality control and operational efficiency. Developed automated detection systems and visualization dashboards for enhanced data quality monitoring.",
-      type: "Data Analytics Project",
+      title: "Duckweed Growth Optimization Research",
+      description: "Experimental research investigating the growth potential of duckweed using thin fraction manure as a nutrient source, exploring sustainable protein feed alternatives for livestock farming.",
+      type: "Laboratory Research",
       status: "Completed",
-      technologies: ["Python", "Statistical Analysis", "Data Visualization", "Anomaly Detection", "Quality Control", "Azure"],
+      technologies: ["Experimental Design", "Growth Analysis", "Nutrient Management", "Statistical Analysis"],
       highlights: [
-        "Developed automated outlier detection algorithms for production data",
-        "Created comprehensive visualization dashboards for quality monitoring",
-        "Implemented statistical methods for anomaly identification",
-        "Utilized Azure Storage Explorer for large dataset management",
-        "Provided actionable recommendations for data collection improvements",
-        "Built automated reporting systems for pig production data"
+        "Designed controlled experiments for optimal growth conditions",
+        "Analyzed nutrient utilization efficiency from manure fractions",
+        "Evaluated sustainability and scalability of duckweed cultivation",
+        "Measured protein content and growth rates under various conditions",
+        "Assessed environmental impact and feasibility for farm implementation"
       ],
-      impact: "Improved data quality control and operational efficiency across agricultural operations",
-      icon: Target,
+      impact: "Contributed to sustainable feed alternative research for livestock nutrition",
+      icon: Sprout,
+      color: "agricultural-green"
+    },
+    {
+      title: "Garlic Supplements Impact on Cow Health",
+      description: "Clinical research study examining the effects of garlic supplementation on dairy cow health, specifically analyzing somatic cell count variations in milk production and overall animal wellbeing.",
+      type: "Clinical Research",
+      status: "Completed",
+      technologies: ["Clinical Analysis", "Milk Quality Testing", "Statistical Modeling", "Health Monitoring"],
+      highlights: [
+        "Conducted controlled feeding trials with garlic supplements",
+        "Performed comprehensive milk cell count analysis over extended periods",
+        "Applied statistical methods to measure health improvements",
+        "Monitored animal behavior and productivity indicators",
+        "Analyzed cost-benefit implications for dairy operations"
+      ],
+      impact: "Provided evidence-based insights for natural health interventions in dairy farming",
+      icon: Activity,
+      color: "data-blue"
+    },
+    {
+      title: "Mycotoxins and Cow Reproductive Health Literature Study",
+      description: "Comprehensive literature review analyzing the relationship between mycotoxin exposure and reproductive health in dairy cattle, synthesizing current research findings to identify knowledge gaps and recommendations.",
+      type: "Literature Review",
+      status: "Completed",
+      technologies: ["Systematic Review", "Meta-Analysis", "Research Synthesis", "Scientific Writing"],
+      highlights: [
+        "Reviewed 50+ peer-reviewed publications on mycotoxin effects",
+        "Identified key relationships between toxin exposure and fertility rates",
+        "Synthesized findings into actionable recommendations for farmers",
+        "Analyzed methodological approaches across different studies",
+        "Provided future research directions and practical implications"
+      ],
+      impact: "Enhanced understanding of environmental factors affecting cattle reproductive health",
+      icon: BookOpen,
       color: "tech-accent"
-    }
+    },
   ];
 
   const futureProjects = [
