@@ -38,6 +38,24 @@ const ProjectsSection = () => {
       impact: "Model helps farmers optimize feed efficiency and reduce costs",
       icon: BarChart3,
       color: "data-blue"
+    },
+    {
+      title: "Agricultural Data Outlier Analysis",
+      description: "Comprehensive analysis project focused on identifying and analyzing outliers in agricultural production data to improve quality control and operational efficiency. Developed automated detection systems and visualization dashboards for enhanced data quality monitoring.",
+      type: "Data Analytics Project",
+      status: "Completed",
+      technologies: ["Python", "Statistical Analysis", "Data Visualization", "Anomaly Detection", "Quality Control", "Azure"],
+      highlights: [
+        "Developed automated outlier detection algorithms for production data",
+        "Created comprehensive visualization dashboards for quality monitoring",
+        "Implemented statistical methods for anomaly identification",
+        "Utilized Azure Storage Explorer for large dataset management",
+        "Provided actionable recommendations for data collection improvements",
+        "Built automated reporting systems for pig production data"
+      ],
+      impact: "Improved data quality control and operational efficiency across agricultural operations",
+      icon: Target,
+      color: "tech-accent"
     }
   ];
 

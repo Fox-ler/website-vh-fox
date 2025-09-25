@@ -23,7 +23,9 @@ const SkillsSection = () => {
         { name: "SQL", level: "Advanced", description: "Database queries, data manipulation" },
         { name: "Excel", level: "Expert", description: "Advanced formulas, pivot tables, modeling" },
         { name: "Power BI", level: "Advanced", description: "Dashboard creation, business intelligence" },
-        { name: "Machine Learning", level: "Intermediate", description: "Predictive modeling, data mining" }
+        { name: "Machine Learning", level: "Intermediate", description: "Predictive modeling, data mining" },
+        { name: "Azure Cloud", level: "Intermediate", description: "Storage Explorer, DevOps, Databricks" },
+        { name: "Data Engineering", level: "Intermediate", description: "ETL pipelines, report automation" }
       ]
     },
     {
@@ -49,7 +51,9 @@ const SkillsSection = () => {
         { name: "Project Management", level: "Advanced", description: "Planning, execution, delivery" },
         { name: "Technical Writing", level: "Advanced", description: "Documentation, reporting" },
         { name: "Teamwork", level: "Expert", description: "Collaboration, leadership" },
-        { name: "Problem Solving", level: "Expert", description: "Analytical thinking, innovation" }
+        { name: "Problem Solving", level: "Expert", description: "Analytical thinking, innovation" },
+        { name: "Dashboard Development", level: "Advanced", description: "Streamlit, Power BI, data visualization" },
+        { name: "Project Adaptability", level: "Expert", description: "Quick project takeover, flexible teamwork" }
       ]
     }
   ];
