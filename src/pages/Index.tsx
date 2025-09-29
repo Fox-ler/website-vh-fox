@@ -5,10 +5,12 @@ import ExperienceSection from '@/components/resume/ExperienceSection';
 import SkillsSection from '@/components/resume/SkillsSection';
 import ProjectsSection from '@/components/resume/ProjectsSection';
 import ContactSection from '@/components/resume/ContactSection';
+import LanguageToggle from '@/components/LanguageToggle';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <LanguageToggle />
       <HeroSection />
       <AboutSection />
       <EducationSection />

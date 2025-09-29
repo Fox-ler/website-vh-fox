@@ -1,8 +1,10 @@
 import { Mail, Linkedin, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-agriculture-data.jpg';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const HeroSection = () => {
+  const { t } = useLanguage();
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -16,13 +18,11 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="block">Agricultural</span>
-          <span className="block text-tech-accent">Data Scientist</span>
+          {t('hero.title')}
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-          Bridging the gap between traditional farming practices and cutting-edge data analytics 
-          to drive innovation in agriculture
+          {t('hero.description')}
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -32,7 +32,7 @@ const HeroSection = () => {
             className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm"
           >
             <Mail className="mr-2 h-5 w-5" />
-            Contact Me
+            {t('hero.contact')}
           </Button>
           
           <Button 
@@ -50,7 +50,7 @@ const HeroSection = () => {
             className="bg-transparent text-white border-white/50 hover:bg-white/20 backdrop-blur-sm"
           >
             <Download className="mr-2 h-5 w-5" />
-            Download CV
+            {t('hero.downloadCV')}
           </Button>
         </div>
         
@@ -58,15 +58,15 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
             <div className="text-3xl font-bold text-tech-accent mb-2">8+</div>
-            <div className="text-sm uppercase tracking-wide">Years in Agriculture</div>
+            <div className="text-sm uppercase tracking-wide">{t('hero.stats.experience')}</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
             <div className="text-3xl font-bold text-tech-accent mb-2">Data</div>
-            <div className="text-sm uppercase tracking-wide">Science Expertise</div>
+            <div className="text-sm uppercase tracking-wide">{t('hero.stats.expertise')}</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
             <div className="text-3xl font-bold text-tech-accent mb-2">Dutch</div>
-            <div className="text-sm uppercase tracking-wide">& International</div>
+            <div className="text-sm uppercase tracking-wide">{t('hero.stats.scope')}</div>
           </div>
         </div>
       </div>
