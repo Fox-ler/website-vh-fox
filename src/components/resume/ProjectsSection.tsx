@@ -6,110 +6,28 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const ProjectsSection = () => {
   const { t } = useLanguage();
-  const projects = [
-    {
-      title: "Mixed Method Thesis: Herbal Rich Grassland Analysis",
-      description: "Comprehensive research project combining data mining techniques with agricultural field studies to analyze the impact of herbal rich grasslands on livestock nutrition and farm productivity. Developed predictive models based on feed intake patterns and nutritional outcomes.",
-      type: "Academic Research",
-      status: "Completed",
-      technologies: ["Python", "Data Mining", "Statistical Analysis", "Agricultural Research", "Predictive Modeling"],
-      highlights: [
-        "Applied advanced data mining techniques to analyze grassland composition",
-        "Developed predictive models for feed intake optimization",
-        "Combined quantitative data analysis with qualitative field observations",
-        "Identified key factors influencing livestock nutrition from herbal grasslands",
-        "Presented findings to academic and industry stakeholders"
-      ],
-      impact: "Research findings contributed to understanding of sustainable livestock feeding practices",
-      icon: Leaf,
-      color: "agricultural-green"
-    },
-    {
-      title: "Feed Intake Prediction Model",
-      description: "Machine learning project focused on predicting optimal feed intake patterns for dairy cattle based on environmental factors, animal characteristics, and historical consumption data. Implemented using Python with scikit-learn and statistical modeling techniques.",
-      type: "Data Science Project",
-      status: "Ongoing",
-      technologies: ["Python", "Machine Learning", "Scikit-learn", "Data Visualization", "Regression Analysis"],
-      highlights: [
-        "Collected and preprocessed large datasets of feed intake records",
-        "Implemented multiple ML algorithms for prediction accuracy comparison",
-        "Created data visualization dashboards for farmer-friendly insights",
-        "Validated model performance against real-world feeding scenarios",
-        "Integrated weather and seasonal data for improved predictions"
-      ],
-      impact: "Model helps farmers optimize feed efficiency and reduce costs",
-      icon: BarChart3,
-      color: "data-blue"
-    },
-    {
-      title: "Duckweed Growth Optimization Research",
-      description: "Experimental research investigating the growth potential of duckweed using thin fraction manure as a nutrient source, exploring sustainable protein feed alternatives for livestock farming.",
-      type: "Laboratory Research",
-      status: "Completed",
-      technologies: ["Experimental Design", "Growth Analysis", "Nutrient Management", "Statistical Analysis"],
-      highlights: [
-        "Designed controlled experiments for optimal growth conditions",
-        "Analyzed nutrient utilization efficiency from manure fractions",
-        "Evaluated sustainability and scalability of duckweed cultivation",
-        "Measured protein content and growth rates under various conditions",
-        "Assessed environmental impact and feasibility for farm implementation"
-      ],
-      impact: "Contributed to sustainable feed alternative research for livestock nutrition",
-      icon: Sprout,
-      color: "agricultural-green"
-    },
-    {
-      title: "Garlic Supplements Impact on Cow Health",
-      description: "Clinical research study examining the effects of garlic supplementation on dairy cow health, specifically analyzing somatic cell count variations in milk production and overall animal wellbeing.",
-      type: "Clinical Research",
-      status: "Completed",
-      technologies: ["Clinical Analysis", "Milk Quality Testing", "Statistical Modeling", "Health Monitoring"],
-      highlights: [
-        "Conducted controlled feeding trials with garlic supplements",
-        "Performed comprehensive milk cell count analysis over extended periods",
-        "Applied statistical methods to measure health improvements",
-        "Monitored animal behavior and productivity indicators",
-        "Analyzed cost-benefit implications for dairy operations"
-      ],
-      impact: "Provided evidence-based insights for natural health interventions in dairy farming",
-      icon: Activity,
-      color: "data-blue"
-    },
-    {
-      title: "Mycotoxins and Cow Reproductive Health Literature Study",
-      description: "Comprehensive literature review analyzing the relationship between mycotoxin exposure and reproductive health in dairy cattle, synthesizing current research findings to identify knowledge gaps and recommendations.",
-      type: "Literature Review",
-      status: "Completed",
-      technologies: ["Systematic Review", "Meta-Analysis", "Research Synthesis", "Scientific Writing"],
-      highlights: [
-        "Reviewed 50+ peer-reviewed publications on mycotoxin effects",
-        "Identified key relationships between toxin exposure and fertility rates",
-        "Synthesized findings into actionable recommendations for farmers",
-        "Analyzed methodological approaches across different studies",
-        "Provided future research directions and practical implications"
-      ],
-      impact: "Enhanced understanding of environmental factors affecting cattle reproductive health",
-      icon: BookOpen,
-      color: "tech-accent"
-    },
-  ];
+  const projectsData = t('projectsData');
+  
+  const iconMap: { [key: string]: any } = {
+    'agricultural-green': Leaf,
+    'data-blue': BarChart3,
+    'tech-accent': BookOpen
+  };
+  
+  const projects = projectsData.projects.map((project: any) => ({
+    ...project,
+    icon: iconMap[project.color] || Leaf
+  }));
 
-  const futureProjects = [
-    {
-      title: "Automated Livestock Health Monitoring System",
-      description: "IoT-based system combining sensor data with machine learning for early disease detection",
-      technologies: ["IoT", "Python", "Computer Vision", "Time Series Analysis"],
-      icon: Target,
-      color: "tech-accent"
-    },
-    {
-      title: "Sustainable Farming Analytics Platform",
-      description: "Comprehensive dashboard for tracking and optimizing environmental impact of farming operations",
-      technologies: ["React", "Python", "Environmental Data", "Sustainability Metrics"],
-      icon: Leaf,
-      color: "agricultural-green"
-    }
-  ];
+  const futureProjectIconMap: { [key: string]: any } = {
+    'tech-accent': Target,
+    'agricultural-green': Leaf
+  };
+  
+  const futureProjects = projectsData.futureProjects.map((project: any) => ({
+    ...project,
+    icon: futureProjectIconMap[project.color] || Target
+  }));
 
   const ProjectCard = ({ project, isFuture = false }: { project: any, isFuture?: boolean }) => {
     const IconComponent = project.icon;

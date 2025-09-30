@@ -52,6 +52,265 @@ const translations = {
         scope: "International Scope"
       }
     },
+    educationData: [
+      {
+        degree: "Bachelor in Animal and Livestock Husbandry",
+        institution: "Aeres University of Applied Sciences",
+        location: "Dronten",
+        period: "September 2021 - August 2025",
+        status: "Current",
+        description: "Comprehensive program combining theoretical knowledge with practical applications in livestock management and agricultural sciences."
+      },
+      {
+        degree: "Data Science Minor",
+        institution: "Utrecht University",
+        location: "Utrecht",
+        period: "September 2024 - January 2025",
+        status: "Current",
+        description: "Specialized minor focusing on machine learning, statistical analysis, and data visualization techniques applied to real-world problems."
+      },
+      {
+        degree: "MBO Professional Expert in Livestock Farming, Level 4",
+        institution: "Zone College",
+        location: "Zwolle",
+        period: "September 2018 - August 2021",
+        status: "Completed",
+        description: "Professional certification in livestock farming with hands-on training in modern agricultural practices and animal husbandry."
+      },
+      {
+        degree: "TL Level (Graduated with Honors)",
+        institution: "Reggesteyn",
+        location: "Nijverdal",
+        period: "September 2014 - August 2018",
+        status: "Completed",
+        description: "Secondary education completed with honors, demonstrating strong academic performance and dedication."
+      }
+    ],
+    experienceData: {
+      positions: [
+        {
+          title: "Data Intelligence Specialist",
+          company: "Agrifirm Data Intelligence",
+          location: "Netherlands",
+          period: "February 2025 - January 2026",
+          type: "Full-time",
+          current: true,
+          highlights: [
+            "Applied Python and advanced data analysis techniques to agricultural datasets",
+            "Implemented machine learning models and translated insights into practical applications",
+            "Presented complex analytical results with UX design principles",
+            "Analyzed operational data to identify opportunities for process improvement",
+            "Collaborated with cross-functional teams to optimize agricultural workflows"
+          ]
+        },
+        {
+          title: "Agricultural Sector Professional",
+          company: "Various Agricultural Operations",
+          location: "Netherlands",
+          period: "2017 - Present",
+          type: "Multiple Roles",
+          current: true,
+          highlights: [
+            "8+ years of comprehensive experience across dairy and pig farming operations",
+            "Specialized role as professional milker with expertise in modern milking systems",
+            "Gained practical experience on home-based dairy farm operations",
+            "Developed deep understanding of livestock management and farm operations",
+            "Built strong foundation in traditional farming practices and animal husbandry"
+          ]
+        }
+      ],
+      internships: [
+        {
+          title: "Dairy Farming Intern",
+          company: "Danish Dairy Farm",
+          location: "Denmark",
+          period: "May 2023 - July 2023",
+          highlights: [
+            "Maintained and monitored large animal groups (600+ dairy cattle)",
+            "Communicated effectively with international colleagues in multicultural environment",
+            "Gained experience with advanced technical systems and data management programs",
+            "Applied practical knowledge in large-scale dairy farming operations",
+            "Developed international perspective on modern agricultural practices"
+          ]
+        },
+        {
+          title: "Dairy Technology Intern",
+          company: "Lely Automated Dairy Farm",
+          location: "Netherlands",
+          period: "2022",
+          highlights: [
+            "Worked with cutting-edge dairy technology including Lely feeding and manure robots",
+            "Collected extensive practical experience in automated dairy farming processes",
+            "Learned to operate and maintain sophisticated agricultural technology systems",
+            "Gained insights into precision agriculture and automated livestock management"
+          ]
+        },
+        {
+          title: "Livestock Farm Intern",
+          company: "Bosch International Horse Breeding Farm",
+          location: "Luttenberg, Netherlands",
+          period: "2021",
+          highlights: [
+            "Worked at diversified operation with two distinct business branches",
+            "Developed adaptability skills in varied agricultural environments",
+            "Learned to maintain professional representation in client-facing situations",
+            "Mastered interpretation and analysis of milking robot data and information systems",
+            "Gained experience in international horse breeding operations"
+          ]
+        }
+      ]
+    },
+    skillsData: {
+      categories: [
+        {
+          title: "Data Science & Analytics",
+          skills: [
+            { name: "Python", level: "Advanced", description: "Data analysis, machine learning, automation" },
+            { name: "R", level: "Intermediate", description: "Statistical analysis, data visualization" },
+            { name: "SQL", level: "Advanced", description: "Database queries, data manipulation" },
+            { name: "Excel", level: "Expert", description: "Advanced formulas, pivot tables, modeling" },
+            { name: "Power BI", level: "Advanced", description: "Dashboard creation, business intelligence" },
+            { name: "Machine Learning", level: "Intermediate", description: "Predictive modeling, data mining" },
+            { name: "Azure Cloud", level: "Intermediate", description: "Storage Explorer, DevOps, Databricks" },
+            { name: "Data Engineering", level: "Intermediate", description: "ETL pipelines, report automation" }
+          ]
+        },
+        {
+          title: "Agricultural Expertise",
+          skills: [
+            { name: "Livestock Farming", level: "Expert", description: "8+ years hands-on experience" },
+            { name: "Dairy Operations", level: "Expert", description: "Milking systems, herd management" },
+            { name: "Agricultural Technology", level: "Advanced", description: "Lely robots, automated systems" },
+            { name: "Animal Husbandry", level: "Expert", description: "Animal health, breeding, nutrition" },
+            { name: "Farm Management", level: "Advanced", description: "Operations, efficiency optimization" },
+            { name: "Process Improvement", level: "Advanced", description: "Workflow optimization, innovation" },
+            { name: "Agricultural Research", level: "Advanced", description: "Experimental design, data collection, analysis" }
+          ]
+        },
+        {
+          title: "Technical & Communication",
+          skills: [
+            { name: "Data Visualization", level: "Advanced", description: "Charts, dashboards, storytelling" },
+            { name: "UX Design", level: "Intermediate", description: "User experience, presentation design" },
+            { name: "Project Management", level: "Advanced", description: "Planning, execution, delivery" },
+            { name: "Technical Writing", level: "Advanced", description: "Documentation, reporting" },
+            { name: "Teamwork", level: "Expert", description: "Collaboration, leadership" },
+            { name: "Problem Solving", level: "Expert", description: "Analytical thinking, innovation" },
+            { name: "Dashboard Development", level: "Advanced", description: "Streamlit, Power BI, data visualization" },
+            { name: "Project Adaptability", level: "Expert", description: "Quick project takeover, flexible teamwork" },
+            { name: "Research Methodology", level: "Advanced", description: "Experimental design, literature review" },
+            { name: "Scientific Writing", level: "Advanced", description: "Research papers, technical documentation" }
+          ]
+        }
+      ],
+      languages: [
+        { name: "Dutch", level: "Native", flag: "🇳🇱", description: "Native speaker" },
+        { name: "English", level: "C1", flag: "🇬🇧", description: "Passed C1 level certification" }
+      ],
+      certifications: [
+        { name: "Driver's License B", type: "certification", year: "Current" },
+        { name: "MBO Level 4 Livestock Farming", type: "professional", year: "2021" },
+        { name: "Data Science Minor", type: "academic", year: "2025" }
+      ]
+    },
+    projectsData: {
+      projects: [
+        {
+          title: "Mixed Method Thesis: Herbal Rich Grassland Analysis",
+          description: "Comprehensive research project combining data mining techniques with agricultural field studies to analyze the impact of herbal rich grasslands on livestock nutrition and farm productivity. Developed predictive models based on feed intake patterns and nutritional outcomes.",
+          type: "Academic Research",
+          status: "Completed",
+          technologies: ["Python", "Data Mining", "Statistical Analysis", "Agricultural Research", "Predictive Modeling"],
+          highlights: [
+            "Applied advanced data mining techniques to analyze grassland composition",
+            "Developed predictive models for feed intake optimization",
+            "Combined quantitative data analysis with qualitative field observations",
+            "Identified key factors influencing livestock nutrition from herbal grasslands",
+            "Presented findings to academic and industry stakeholders"
+          ],
+          impact: "Research findings contributed to understanding of sustainable livestock feeding practices",
+          color: "agricultural-green"
+        },
+        {
+          title: "Feed Intake Prediction Model",
+          description: "Machine learning project focused on predicting optimal feed intake patterns for dairy cattle based on environmental factors, animal characteristics, and historical consumption data. Implemented using Python with scikit-learn and statistical modeling techniques.",
+          type: "Data Science Project",
+          status: "Ongoing",
+          technologies: ["Python", "Machine Learning", "Scikit-learn", "Data Visualization", "Regression Analysis"],
+          highlights: [
+            "Collected and preprocessed large datasets of feed intake records",
+            "Implemented multiple ML algorithms for prediction accuracy comparison",
+            "Created data visualization dashboards for farmer-friendly insights",
+            "Validated model performance against real-world feeding scenarios",
+            "Integrated weather and seasonal data for improved predictions"
+          ],
+          impact: "Model helps farmers optimize feed efficiency and reduce costs",
+          color: "data-blue"
+        },
+        {
+          title: "Duckweed Growth Optimization Research",
+          description: "Experimental research investigating the growth potential of duckweed using thin fraction manure as a nutrient source, exploring sustainable protein feed alternatives for livestock farming.",
+          type: "Laboratory Research",
+          status: "Completed",
+          technologies: ["Experimental Design", "Growth Analysis", "Nutrient Management", "Statistical Analysis"],
+          highlights: [
+            "Designed controlled experiments for optimal growth conditions",
+            "Analyzed nutrient utilization efficiency from manure fractions",
+            "Evaluated sustainability and scalability of duckweed cultivation",
+            "Measured protein content and growth rates under various conditions",
+            "Assessed environmental impact and feasibility for farm implementation"
+          ],
+          impact: "Contributed to sustainable feed alternative research for livestock nutrition",
+          color: "agricultural-green"
+        },
+        {
+          title: "Garlic Supplements Impact on Cow Health",
+          description: "Clinical research study examining the effects of garlic supplementation on dairy cow health, specifically analyzing somatic cell count variations in milk production and overall animal wellbeing.",
+          type: "Clinical Research",
+          status: "Completed",
+          technologies: ["Clinical Analysis", "Milk Quality Testing", "Statistical Modeling", "Health Monitoring"],
+          highlights: [
+            "Conducted controlled feeding trials with garlic supplements",
+            "Performed comprehensive milk cell count analysis over extended periods",
+            "Applied statistical methods to measure health improvements",
+            "Monitored animal behavior and productivity indicators",
+            "Analyzed cost-benefit implications for dairy operations"
+          ],
+          impact: "Provided evidence-based insights for natural health interventions in dairy farming",
+          color: "data-blue"
+        },
+        {
+          title: "Mycotoxins and Cow Reproductive Health Literature Study",
+          description: "Comprehensive literature review analyzing the relationship between mycotoxin exposure and reproductive health in dairy cattle, synthesizing current research findings to identify knowledge gaps and recommendations.",
+          type: "Literature Review",
+          status: "Completed",
+          technologies: ["Systematic Review", "Meta-Analysis", "Research Synthesis", "Scientific Writing"],
+          highlights: [
+            "Reviewed 50+ peer-reviewed publications on mycotoxin effects",
+            "Identified key relationships between toxin exposure and fertility rates",
+            "Synthesized findings into actionable recommendations for farmers",
+            "Analyzed methodological approaches across different studies",
+            "Provided future research directions and practical implications"
+          ],
+          impact: "Enhanced understanding of environmental factors affecting cattle reproductive health",
+          color: "tech-accent"
+        }
+      ],
+      futureProjects: [
+        {
+          title: "Automated Livestock Health Monitoring System",
+          description: "IoT-based system combining sensor data with machine learning for early disease detection",
+          technologies: ["IoT", "Python", "Computer Vision", "Time Series Analysis"],
+          color: "tech-accent"
+        },
+        {
+          title: "Sustainable Farming Analytics Platform",
+          description: "Comprehensive dashboard for tracking and optimizing environmental impact of farming operations",
+          technologies: ["React", "Python", "Environmental Data", "Sustainability Metrics"],
+          color: "agricultural-green"
+        }
+      ]
+    },
     about: {
       title: "About Me",
       intro: "I am a passionate Agricultural Data Scientist with a unique blend of hands-on farming experience and advanced analytical skills. My journey from practical agriculture to data science allows me to bridge the gap between traditional farming knowledge and modern technological solutions.",
@@ -181,6 +440,265 @@ const translations = {
         expertise: "Expertisegebieden",
         scope: "Internationale Scope"
       }
+    },
+    educationData: [
+      {
+        degree: "Bachelor Dier- en Veehouderij",
+        institution: "Aeres Hogeschool",
+        location: "Dronten",
+        period: "September 2021 - Augustus 2025",
+        status: "Current",
+        description: "Uitgebreid programma dat theoretische kennis combineert met praktische toepassingen in veehouderijmanagement en agrarische wetenschappen."
+      },
+      {
+        degree: "Minor Data Science",
+        institution: "Universiteit Utrecht",
+        location: "Utrecht",
+        period: "September 2024 - Januari 2025",
+        status: "Current",
+        description: "Gespecialiseerde minor gericht op machine learning, statistische analyse en datavisualisatietechnieken toegepast op praktijkproblemen."
+      },
+      {
+        degree: "MBO Vakbekwaam Medewerker Veehouderij, Niveau 4",
+        institution: "Zone College",
+        location: "Zwolle",
+        period: "September 2018 - Augustus 2021",
+        status: "Completed",
+        description: "Professionele certificering in veehouderij met praktijktraining in moderne agrarische praktijken en dierhouderij."
+      },
+      {
+        degree: "TL Niveau (Cum Laude)",
+        institution: "Reggesteyn",
+        location: "Nijverdal",
+        period: "September 2014 - Augustus 2018",
+        status: "Completed",
+        description: "Voortgezet onderwijs afgerond met lof, wat sterke academische prestaties en toewijding aantoont."
+      }
+    ],
+    experienceData: {
+      positions: [
+        {
+          title: "Data Intelligence Specialist",
+          company: "Agrifirm Data Intelligence",
+          location: "Nederland",
+          period: "Februari 2025 - Januari 2026",
+          type: "Voltijd",
+          current: true,
+          highlights: [
+            "Python en geavanceerde data-analysetechnieken toegepast op agrarische datasets",
+            "Machine learning modellen geïmplementeerd en inzichten vertaald naar praktische toepassingen",
+            "Complexe analytische resultaten gepresenteerd met UX-ontwerpprincipes",
+            "Operationele data geanalyseerd om verbetermogelijkheden te identificeren",
+            "Samengewerkt met multifunctionele teams om agrarische workflows te optimaliseren"
+          ]
+        },
+        {
+          title: "Agrarische Professional",
+          company: "Diverse Agrarische Bedrijven",
+          location: "Nederland",
+          period: "2017 - Heden",
+          type: "Meerdere Rollen",
+          current: true,
+          highlights: [
+            "8+ jaar uitgebreide ervaring in melkvee- en varkenshouderij",
+            "Gespecialiseerde rol als professionele melker met expertise in moderne melksystemen",
+            "Praktijkervaring opgedaan op thuisbedrijf melkveehouderij",
+            "Diepgaand begrip ontwikkeld van veehouderijmanagement en bedrijfsvoering",
+            "Sterke basis gebouwd in traditionele landbouwpraktijken en dierhouderij"
+          ]
+        }
+      ],
+      internships: [
+        {
+          title: "Melkveehouderij Stagiair",
+          company: "Deens Melkveebedrijf",
+          location: "Denemarken",
+          period: "Mei 2023 - Juli 2023",
+          highlights: [
+            "Grote diergroepen onderhouden en gemonitord (600+ melkkoeien)",
+            "Effectief gecommuniceerd met internationale collega's in multiculturele omgeving",
+            "Ervaring opgedaan met geavanceerde technische systemen en datamanagementprogramma's",
+            "Praktische kennis toegepast in grootschalige melkveehouderij",
+            "Internationaal perspectief ontwikkeld op moderne agrarische praktijken"
+          ]
+        },
+        {
+          title: "Zuiveltechnologie Stagiair",
+          company: "Lely Geautomatiseerd Melkveebedrijf",
+          location: "Nederland",
+          period: "2022",
+          highlights: [
+            "Gewerkt met geavanceerde zuiveltechnologie inclusief Lely voer- en mestrobots",
+            "Uitgebreide praktijkervaring verzameld in geautomatiseerde melkveehouderijprocessen",
+            "Geleerd om geavanceerde landbouwtechnologiesystemen te bedienen en onderhouden",
+            "Inzichten verworven in precisielandbouw en geautomatiseerd veehouderijmanagement"
+          ]
+        },
+        {
+          title: "Veehouderij Stagiair",
+          company: "Bosch International Paardenfokkerij",
+          location: "Luttenberg, Nederland",
+          period: "2021",
+          highlights: [
+            "Gewerkt bij gediversifieerde operatie met twee verschillende bedrijfstakken",
+            "Aanpassingsvaardigheden ontwikkeld in gevarieerde agrarische omgevingen",
+            "Geleerd professionele vertegenwoordiging te behouden in klantgerichte situaties",
+            "Interpretatie en analyse van melkrobotgegevens en informatiesystemen onder de knie gekregen",
+            "Ervaring opgedaan in internationale paardenfokkerij"
+          ]
+        }
+      ]
+    },
+    skillsData: {
+      categories: [
+        {
+          title: "Data Science & Analytics",
+          skills: [
+            { name: "Python", level: "Gevorderd", description: "Data-analyse, machine learning, automatisering" },
+            { name: "R", level: "Gemiddeld", description: "Statistische analyse, datavisualisatie" },
+            { name: "SQL", level: "Gevorderd", description: "Database queries, datamanipulatie" },
+            { name: "Excel", level: "Expert", description: "Geavanceerde formules, draaitabellen, modellering" },
+            { name: "Power BI", level: "Gevorderd", description: "Dashboard creatie, business intelligence" },
+            { name: "Machine Learning", level: "Gemiddeld", description: "Voorspellende modellering, data mining" },
+            { name: "Azure Cloud", level: "Gemiddeld", description: "Storage Explorer, DevOps, Databricks" },
+            { name: "Data Engineering", level: "Gemiddeld", description: "ETL pipelines, rapportage-automatisering" }
+          ]
+        },
+        {
+          title: "Agrarische Expertise",
+          skills: [
+            { name: "Veehouderij", level: "Expert", description: "8+ jaar praktijkervaring" },
+            { name: "Melkveehouderij", level: "Expert", description: "Melksystemen, kuddemanagement" },
+            { name: "Agrarische Technologie", level: "Gevorderd", description: "Lely robots, geautomatiseerde systemen" },
+            { name: "Dierhouderij", level: "Expert", description: "Diergezondheid, fokkerij, voeding" },
+            { name: "Bedrijfsmanagement", level: "Gevorderd", description: "Operaties, efficiëntie optimalisatie" },
+            { name: "Procesverbetering", level: "Gevorderd", description: "Workflow optimalisatie, innovatie" },
+            { name: "Agrarisch Onderzoek", level: "Gevorderd", description: "Experimenteel ontwerp, dataverzameling, analyse" }
+          ]
+        },
+        {
+          title: "Technisch & Communicatie",
+          skills: [
+            { name: "Datavisualisatie", level: "Gevorderd", description: "Grafieken, dashboards, storytelling" },
+            { name: "UX Design", level: "Gemiddeld", description: "Gebruikerservaring, presentatieontwerp" },
+            { name: "Projectmanagement", level: "Gevorderd", description: "Planning, uitvoering, levering" },
+            { name: "Technisch Schrijven", level: "Gevorderd", description: "Documentatie, rapportage" },
+            { name: "Teamwork", level: "Expert", description: "Samenwerking, leiderschap" },
+            { name: "Probleemoplossing", level: "Expert", description: "Analytisch denken, innovatie" },
+            { name: "Dashboard Ontwikkeling", level: "Gevorderd", description: "Streamlit, Power BI, datavisualisatie" },
+            { name: "Project Aanpassingsvermogen", level: "Expert", description: "Snelle projectovername, flexibel teamwork" },
+            { name: "Onderzoeksmethodologie", level: "Gevorderd", description: "Experimenteel ontwerp, literatuurstudie" },
+            { name: "Wetenschappelijk Schrijven", level: "Gevorderd", description: "Onderzoekspapers, technische documentatie" }
+          ]
+        }
+      ],
+      languages: [
+        { name: "Nederlands", level: "Moedertaal", flag: "🇳🇱", description: "Moedertaalspreker" },
+        { name: "Engels", level: "C1", flag: "🇬🇧", description: "C1 niveau certificering behaald" }
+      ],
+      certifications: [
+        { name: "Rijbewijs B", type: "certificering", year: "Huidig" },
+        { name: "MBO Niveau 4 Veehouderij", type: "professioneel", year: "2021" },
+        { name: "Minor Data Science", type: "academisch", year: "2025" }
+      ]
+    },
+    projectsData: {
+      projects: [
+        {
+          title: "Mixed Method Scriptie: Kruidenrijk Grasland Analyse",
+          description: "Uitgebreid onderzoeksproject dat data mining technieken combineert met agrarische veldstudies om de impact van kruidenrijk grasland op veevoeding en bedrijfsproductiviteit te analyseren. Voorspellende modellen ontwikkeld op basis van voeropnamepatronen en voedingsresultaten.",
+          type: "Academisch Onderzoek",
+          status: "Afgerond",
+          technologies: ["Python", "Data Mining", "Statistische Analyse", "Agrarisch Onderzoek", "Voorspellende Modellering"],
+          highlights: [
+            "Geavanceerde data mining technieken toegepast om graslandsamenstelling te analyseren",
+            "Voorspellende modellen ontwikkeld voor voeropname-optimalisatie",
+            "Kwantitatieve data-analyse gecombineerd met kwalitatieve veldobservaties",
+            "Belangrijke factoren geïdentificeerd die veevoeding vanuit kruidenrijk grasland beïnvloeden",
+            "Bevindingen gepresenteerd aan academische en industriële stakeholders"
+          ],
+          impact: "Onderzoeksbevindingen droegen bij aan begrip van duurzame veevoedingspraktijken",
+          color: "agricultural-green"
+        },
+        {
+          title: "Voeropname Voorspellingsmodel",
+          description: "Machine learning project gericht op het voorspellen van optimale voeropnamepatronen voor melkvee op basis van omgevingsfactoren, dierkenmerken en historische consumptiegegevens. Geïmplementeerd met Python met scikit-learn en statistische modelleringstechnieken.",
+          type: "Data Science Project",
+          status: "Lopend",
+          technologies: ["Python", "Machine Learning", "Scikit-learn", "Datavisualisatie", "Regressie-analyse"],
+          highlights: [
+            "Grote datasets van voeropnamegegevens verzameld en voorverwerkt",
+            "Meerdere ML-algoritmen geïmplementeerd voor vergelijking van voorspellingsnauwkeurigheid",
+            "Datavisualisatie dashboards gemaakt voor boervriendelijke inzichten",
+            "Modelprestaties gevalideerd tegen praktijkscenario's",
+            "Weer- en seizoensgegevens geïntegreerd voor verbeterde voorspellingen"
+          ],
+          impact: "Model helpt boeren voerefficiëntie te optimaliseren en kosten te verlagen",
+          color: "data-blue"
+        },
+        {
+          title: "Kroos Groei-Optimalisatie Onderzoek",
+          description: "Experimenteel onderzoek naar het groeipotentieel van kroos met dunne fractie mest als voedingsbron, waarbij duurzame eiwitvoederalternatieven voor veehouderij worden verkend.",
+          type: "Laboratoriumonderzoek",
+          status: "Afgerond",
+          technologies: ["Experimenteel Ontwerp", "Groei-analyse", "Voedingsstoffenbeheer", "Statistische Analyse"],
+          highlights: [
+            "Gecontroleerde experimenten ontworpen voor optimale groeiomstandigheden",
+            "Voedingsstofbenuttingsefficiëntie uit mestfracties geanalyseerd",
+            "Duurzaamheid en schaalbaarheid van krooscultivatie geëvalueerd",
+            "Eiwitgehalte en groeisnelheden gemeten onder verschillende omstandigheden",
+            "Milieueffect en haalbaarheid voor bedrijfsimplementatie beoordeeld"
+          ],
+          impact: "Bijgedragen aan onderzoek naar duurzame voederalternatieven voor veevoeding",
+          color: "agricultural-green"
+        },
+        {
+          title: "Knoflooksupplementen Impact op Koeiengezondheid",
+          description: "Klinische onderzoeksstudie naar de effecten van knoflooksuppletie op melkkoeiengezondheid, specifiek met analyse van somatische celgetalvariaties in melkproductie en algemeen dierenwelzijn.",
+          type: "Klinisch Onderzoek",
+          status: "Afgerond",
+          technologies: ["Klinische Analyse", "Melkkwaliteitstesten", "Statistische Modellering", "Gezondheidsmonitoring"],
+          highlights: [
+            "Gecontroleerde voederproeven uitgevoerd met knoflooksupplementen",
+            "Uitgebreide melkcelgetalanalyse uitgevoerd over langere perioden",
+            "Statistische methoden toegepast om gezondheidsverbeteringen te meten",
+            "Diergedrag en productiviteitsindicatoren gemonitord",
+            "Kosten-batenimplicaties voor melkveebedrijven geanalyseerd"
+          ],
+          impact: "Evidence-based inzichten geleverd voor natuurlijke gezondheidsinterventies in melkveehouderij",
+          color: "data-blue"
+        },
+        {
+          title: "Mycotoxinen en Reproductieve Gezondheid Koeien Literatuurstudie",
+          description: "Uitgebreide literatuurstudie die de relatie analyseert tussen mycotoxine blootstelling en reproductieve gezondheid bij melkvee, waarbij huidige onderzoeksbevindingen worden gesynthetiseerd om kennishiaten en aanbevelingen te identificeren.",
+          type: "Literatuurstudie",
+          status: "Afgerond",
+          technologies: ["Systematische Review", "Meta-analyse", "Onderzoekssynthese", "Wetenschappelijk Schrijven"],
+          highlights: [
+            "50+ peer-reviewed publicaties over mycotoxine-effecten beoordeeld",
+            "Belangrijke relaties geïdentificeerd tussen toxine blootstelling en vruchtbaarheidspercentages",
+            "Bevindingen gesynthetiseerd tot praktische aanbevelingen voor boeren",
+            "Methodologische benaderingen over verschillende studies geanalyseerd",
+            "Toekomstige onderzoeksrichtingen en praktische implicaties verstrekt"
+          ],
+          impact: "Verbeterd begrip van omgevingsfactoren die reproductieve gezondheid van vee beïnvloeden",
+          color: "tech-accent"
+        }
+      ],
+      futureProjects: [
+        {
+          title: "Geautomatiseerd Vee Gezondheidsmonitoring Systeem",
+          description: "IoT-gebaseerd systeem dat sensorgegevens combineert met machine learning voor vroege ziektedetectie",
+          technologies: ["IoT", "Python", "Computer Vision", "Tijdreeksanalyse"],
+          color: "tech-accent"
+        },
+        {
+          title: "Duurzaam Landbouw Analyseplatform",
+          description: "Uitgebreid dashboard voor het volgen en optimaliseren van de milieueffecten van landbouwactiviteiten",
+          technologies: ["React", "Python", "Milieudata", "Duurzaamheidsmetingen"],
+          color: "agricultural-green"
+        }
+      ]
     },
     about: {
       title: "Over Mij",

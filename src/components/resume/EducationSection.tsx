@@ -5,40 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const EducationSection = () => {
   const { t } = useLanguage();
-  const education = [
-    {
-      degree: "Bachelor in Animal and Livestock Husbandry",
-      institution: "Aeres University of Applied Sciences",
-      location: "Dronten",
-      period: "September 2021 - August 2025",
-      status: "Current",
-      description: "Comprehensive program combining theoretical knowledge with practical applications in livestock management and agricultural sciences."
-    },
-    {
-      degree: "Data Science Minor",
-      institution: "Utrecht University",
-      location: "Utrecht",
-      period: "September 2024 - January 2025",
-      status: "Current",
-      description: "Specialized minor focusing on machine learning, statistical analysis, and data visualization techniques applied to real-world problems."
-    },
-    {
-      degree: "MBO Professional Expert in Livestock Farming, Level 4",
-      institution: "Zone College",
-      location: "Zwolle",
-      period: "September 2018 - August 2021",
-      status: "Completed",
-      description: "Professional certification in livestock farming with hands-on training in modern agricultural practices and animal husbandry."
-    },
-    {
-      degree: "TL Level (Graduated with Honors)",
-      institution: "Reggesteyn",
-      location: "Nijverdal",
-      period: "September 2014 - August 2018",
-      status: "Completed",
-      description: "Secondary education completed with honors, demonstrating strong academic performance and dedication."
-    }
-  ];
+  const education = t('educationData');
 
   return (
     <section className="py-20">

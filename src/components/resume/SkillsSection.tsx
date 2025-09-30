@@ -14,65 +14,14 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const SkillsSection = () => {
   const { t } = useLanguage();
+  const skillsData = t('skillsData');
   const skillCategories = [
-    {
-      title: "Data Science & Analytics",
-      icon: BarChart3,
-      color: "data-blue",
-      skills: [
-        { name: "Python", level: "Advanced", description: "Data analysis, machine learning, automation" },
-        { name: "R", level: "Intermediate", description: "Statistical analysis, data visualization" },
-        { name: "SQL", level: "Advanced", description: "Database queries, data manipulation" },
-        { name: "Excel", level: "Expert", description: "Advanced formulas, pivot tables, modeling" },
-        { name: "Power BI", level: "Advanced", description: "Dashboard creation, business intelligence" },
-        { name: "Machine Learning", level: "Intermediate", description: "Predictive modeling, data mining" },
-        { name: "Azure Cloud", level: "Intermediate", description: "Storage Explorer, DevOps, Databricks" },
-        { name: "Data Engineering", level: "Intermediate", description: "ETL pipelines, report automation" }
-      ]
-    },
-    {
-      title: "Agricultural Expertise",
-      icon: Tractor,
-      color: "agricultural-green",
-      skills: [
-        { name: "Livestock Farming", level: "Expert", description: "8+ years hands-on experience" },
-        { name: "Dairy Operations", level: "Expert", description: "Milking systems, herd management" },
-        { name: "Agricultural Technology", level: "Advanced", description: "Lely robots, automated systems" },
-        { name: "Animal Husbandry", level: "Expert", description: "Animal health, breeding, nutrition" },
-        { name: "Farm Management", level: "Advanced", description: "Operations, efficiency optimization" },
-        { name: "Process Improvement", level: "Advanced", description: "Workflow optimization, innovation" },
-        { name: "Agricultural Research", level: "Advanced", description: "Experimental design, data collection, analysis" }
-      ]
-    },
-    {
-      title: "Technical & Communication",
-      icon: Code,
-      color: "tech-accent",
-      skills: [
-        { name: "Data Visualization", level: "Advanced", description: "Charts, dashboards, storytelling" },
-        { name: "UX Design", level: "Intermediate", description: "User experience, presentation design" },
-        { name: "Project Management", level: "Advanced", description: "Planning, execution, delivery" },
-        { name: "Technical Writing", level: "Advanced", description: "Documentation, reporting" },
-        { name: "Teamwork", level: "Expert", description: "Collaboration, leadership" },
-        { name: "Problem Solving", level: "Expert", description: "Analytical thinking, innovation" },
-        { name: "Dashboard Development", level: "Advanced", description: "Streamlit, Power BI, data visualization" },
-        { name: "Project Adaptability", level: "Expert", description: "Quick project takeover, flexible teamwork" },
-        { name: "Research Methodology", level: "Advanced", description: "Experimental design, literature review" },
-        { name: "Scientific Writing", level: "Advanced", description: "Research papers, technical documentation" }
-      ]
-    }
+    { ...skillsData.categories[0], icon: BarChart3, color: "data-blue" },
+    { ...skillsData.categories[1], icon: Tractor, color: "agricultural-green" },
+    { ...skillsData.categories[2], icon: Code, color: "tech-accent" }
   ];
-
-  const languages = [
-    { name: "Dutch", level: "Native", flag: "🇳🇱", description: "Native speaker" },
-    { name: "English", level: "C1", flag: "🇬🇧", description: "Passed C1 level certification" }
-  ];
-
-  const certifications = [
-    { name: "Driver's License B", type: "certification", year: "Current" },
-    { name: "MBO Level 4 Livestock Farming", type: "professional", year: "2021" },
-    { name: "Data Science Minor", type: "academic", year: "2025" }
-  ];
+  const languages = skillsData.languages;
+  const certifications = skillsData.certifications;
 
   const getLevelColor = (level: string) => {
     switch (level) {

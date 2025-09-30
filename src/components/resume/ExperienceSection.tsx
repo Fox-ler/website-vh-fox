@@ -5,79 +5,9 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const ExperienceSection = () => {
   const { t } = useLanguage();
-  const experiences = [
-    {
-      title: "Data Intelligence Specialist",
-      company: "Agrifirm Data Intelligence",
-      location: "Netherlands",
-      period: "February 2025 - January 2026",
-      type: "Full-time",
-      current: true,
-      highlights: [
-        "Applied Python and advanced data analysis techniques to agricultural datasets",
-        "Implemented machine learning models and translated insights into practical applications",
-        "Presented complex analytical results with UX design principles",
-        "Analyzed operational data to identify opportunities for process improvement",
-        "Collaborated with cross-functional teams to optimize agricultural workflows"
-      ]
-    },
-    {
-      title: "Agricultural Sector Professional",
-      company: "Various Agricultural Operations",
-      location: "Netherlands",
-      period: "2017 - Present",
-      type: "Multiple Roles",
-      current: true,
-      highlights: [
-        "8+ years of comprehensive experience across dairy and pig farming operations",
-        "Specialized role as professional milker with expertise in modern milking systems",
-        "Gained practical experience on home-based dairy farm operations",
-        "Developed deep understanding of livestock management and farm operations",
-        "Built strong foundation in traditional farming practices and animal husbandry"
-      ]
-    }
-  ];
-
-  const internships = [
-    {
-      title: "Dairy Farming Intern",
-      company: "Danish Dairy Farm",
-      location: "Denmark",
-      period: "May 2023 - July 2023",
-      highlights: [
-        "Maintained and monitored large animal groups (600+ dairy cattle)",
-        "Communicated effectively with international colleagues in multicultural environment",
-        "Gained experience with advanced technical systems and data management programs",
-        "Applied practical knowledge in large-scale dairy farming operations",
-        "Developed international perspective on modern agricultural practices"
-      ]
-    },
-    {
-      title: "Dairy Technology Intern",
-      company: "Lely Automated Dairy Farm",
-      location: "Netherlands",
-      period: "2022",
-      highlights: [
-        "Worked with cutting-edge dairy technology including Lely feeding and manure robots",
-        "Collected extensive practical experience in automated dairy farming processes",
-        "Learned to operate and maintain sophisticated agricultural technology systems",
-        "Gained insights into precision agriculture and automated livestock management"
-      ]
-    },
-    {
-      title: "Livestock Farm Intern",
-      company: "Bosch International Horse Breeding Farm",
-      location: "Luttenberg, Netherlands",
-      period: "2021",
-      highlights: [
-        "Worked at diversified operation with two distinct business branches",
-        "Developed adaptability skills in varied agricultural environments",
-        "Learned to maintain professional representation in client-facing situations",
-        "Mastered interpretation and analysis of milking robot data and information systems",
-        "Gained experience in international horse breeding operations"
-      ]
-    }
-  ];
+  const experienceData = t('experienceData');
+  const experiences = experienceData.positions;
+  const internships = experienceData.internships;
 
   const ExperienceCard = ({ exp, isInternship = false }: { exp: any, isInternship?: boolean }) => (
     <Card className="p-6 bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300 mb-6">
