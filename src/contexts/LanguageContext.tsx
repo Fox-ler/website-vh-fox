@@ -78,66 +78,95 @@ const translations = {
     },
     education: {
       title: "Education",
-      description: "My academic journey combines agricultural science with cutting-edge data analytics and AI",
-      current: "Current"
+      description: "A comprehensive educational journey combining agricultural expertise with modern data science",
+      current: "Current",
+      completed: "Completed",
+      degree: "Degree",
+      institution: "Institution",
+      location: "Location",
+      period: "Period"
     },
     experience: {
       title: "Professional Experience",
-      description: "My career spans hands-on farming, data science, and research",
+      description: "A unique blend of hands-on agricultural experience and advanced data science applications",
       current: "Current",
       positions: "Current Positions",
-      internships: "Internships & Training"
+      internships: "Internships & Training",
+      internship: "Internship",
+      fullTime: "Full-time",
+      multipleRoles: "Multiple Roles"
     },
     skills: {
       title: "Skills & Expertise",
-      description: "A comprehensive blend of agricultural knowledge, data science capabilities, and research experience",
+      description: "A comprehensive skill set bridging traditional agriculture with modern data science",
       level: {
         expert: "Expert",
         advanced: "Advanced",
-        intermediate: "Intermediate"
+        intermediate: "Intermediate",
+        native: "Native"
       },
       languages: "Languages",
-      certifications: "Certifications & Training"
+      certifications: "Certifications",
+      categories: {
+        dataScience: "Data Science & Analytics",
+        agriculture: "Agricultural Expertise",
+        technical: "Technical & Communication"
+      }
     },
     projects: {
-      title: "Projects & Research",
-      description: "Practical applications of data science in agriculture and scientific research",
-      completed: "Completed Projects",
-      future: "Future Projects",
+      title: "Featured Projects",
+      description: "Research and development projects showcasing the application of data science in agriculture",
+      future: "Future Projects & Research Interests",
+      futureProject: "Future Project",
       type: {
-        internship: "Internship Project",
-        research: "Research",
-        academic: "Academic Project",
-        planned: "Planned"
+        academic: "Academic Research",
+        dataScience: "Data Science Project",
+        laboratory: "Laboratory Research",
+        clinical: "Clinical Research",
+        literature: "Literature Review"
       },
       status: {
         completed: "Completed",
-        planned: "Planned"
+        ongoing: "Ongoing"
       },
       technologies: "Technologies",
       keyHighlights: "Key Highlights",
       impact: "Impact",
-      contact: "Interested in collaboration? Let's connect!"
+      viewDetails: "View Details",
+      sourceCode: "Source Code",
+      contactText: "Interested in collaborating on agricultural data science projects?",
+      getInTouch: "Get In Touch"
     },
     contact: {
       title: "Get In Touch",
-      description: "I'm always open to discussing new opportunities, collaborations, or simply connecting with fellow professionals in agriculture and data science.",
-      info: "Contact Information",
+      description: "Ready to discuss agricultural data science opportunities, collaboration, or just want to connect? I'd love to hear from you.",
+      info: {
+        email: "Email Address",
+        linkedin: "LinkedIn Profile",
+        location: "Location",
+        phone: "Phone"
+      },
       actions: "Quick Actions",
-      statement: "Currently open to opportunities in agricultural data science, research positions, and innovative farming technology projects.",
       quickActions: {
         download: {
           title: "Download CV",
-          description: "Get my full resume"
+          description: "Get a PDF copy of my complete resume"
         },
         message: {
           title: "Send Message",
-          description: "Email me directly"
+          description: "Reach out for opportunities or collaboration"
         },
         linkedin: {
           title: "Connect on LinkedIn",
-          description: "Let's connect professionally"
+          description: "Let's build our professional network"
         }
+      },
+      opportunities: {
+        title: "Open to New Opportunities",
+        statement: "I'm actively seeking opportunities to apply my unique combination of agricultural expertise and data science skills. Whether you're looking for a data analyst, agricultural consultant, or someone who can bridge the gap between traditional farming and modern technology, I'd love to explore how we can work together.",
+        fullTime: "Available for Full-time Positions",
+        consulting: "Open to Consulting Projects",
+        research: "Interested in Research Collaboration"
       }
     }
   },
@@ -179,66 +208,95 @@ const translations = {
     },
     education: {
       title: "Opleiding",
-      description: "Mijn academische reis combineert landbouwwetenschap met geavanceerde data-analyse en AI",
-      current: "Huidig"
+      description: "Een uitgebreide educatieve reis die agrarische expertise combineert met moderne data science",
+      current: "Huidig",
+      completed: "Afgerond",
+      degree: "Graad",
+      institution: "Instelling",
+      location: "Locatie",
+      period: "Periode"
     },
     experience: {
       title: "Werkervaring",
-      description: "Mijn carrière omvat praktische landbouw, data science en onderzoek",
+      description: "Een unieke mix van praktische agrarische ervaring en geavanceerde data science toepassingen",
       current: "Huidig",
       positions: "Huidige Posities",
-      internships: "Stages & Training"
+      internships: "Stages & Training",
+      internship: "Stage",
+      fullTime: "Voltijd",
+      multipleRoles: "Meerdere Rollen"
     },
     skills: {
       title: "Vaardigheden & Expertise",
-      description: "Een uitgebreide mix van agrarische kennis, data science capaciteiten en onderzoekservaring",
+      description: "Een uitgebreide vaardighedenset die traditionele landbouw verbindt met moderne data science",
       level: {
         expert: "Expert",
         advanced: "Gevorderd",
-        intermediate: "Gemiddeld"
+        intermediate: "Gemiddeld",
+        native: "Moedertaal"
       },
       languages: "Talen",
-      certifications: "Certificeringen & Training"
+      certifications: "Certificeringen",
+      categories: {
+        dataScience: "Data Science & Analytics",
+        agriculture: "Agrarische Expertise",
+        technical: "Technisch & Communicatie"
+      }
     },
     projects: {
-      title: "Projecten & Onderzoek",
-      description: "Praktische toepassingen van data science in de landbouw en wetenschappelijk onderzoek",
-      completed: "Afgeronde Projecten",
-      future: "Toekomstige Projecten",
+      title: "Uitgelichte Projecten",
+      description: "Onderzoeks- en ontwikkelingsprojecten die de toepassing van data science in de landbouw tonen",
+      future: "Toekomstige Projecten & Onderzoeksinteresses",
+      futureProject: "Toekomstig Project",
       type: {
-        internship: "Stage Project",
-        research: "Onderzoek",
-        academic: "Academisch Project",
-        planned: "Gepland"
+        academic: "Academisch Onderzoek",
+        dataScience: "Data Science Project",
+        laboratory: "Laboratoriumonderzoek",
+        clinical: "Klinisch Onderzoek",
+        literature: "Literatuurstudie"
       },
       status: {
         completed: "Afgerond",
-        planned: "Gepland"
+        ongoing: "Lopend"
       },
       technologies: "Technologieën",
       keyHighlights: "Belangrijkste Hoogtepunten",
       impact: "Impact",
-      contact: "Interesse in samenwerking? Laten we contact opnemen!"
+      viewDetails: "Bekijk Details",
+      sourceCode: "Broncode",
+      contactText: "Interesse in samenwerking op agrarische data science projecten?",
+      getInTouch: "Neem Contact Op"
     },
     contact: {
       title: "Neem Contact Op",
-      description: "Ik sta altijd open voor het bespreken van nieuwe kansen, samenwerkingen of gewoon contact leggen met collega-professionals in landbouw en data science.",
-      info: "Contactinformatie",
+      description: "Klaar om te praten over kansen in agrarische data science, samenwerking, of wil je gewoon verbinden? Ik hoor graag van je.",
+      info: {
+        email: "E-mailadres",
+        linkedin: "LinkedIn Profiel",
+        location: "Locatie",
+        phone: "Telefoon"
+      },
       actions: "Snelle Acties",
-      statement: "Momenteel open voor kansen in agrarische data science, onderzoeksposities en innovatieve landbouwtechnologieprojecten.",
       quickActions: {
         download: {
           title: "Download CV",
-          description: "Ontvang mijn volledige CV"
+          description: "Ontvang een PDF-kopie van mijn volledige CV"
         },
         message: {
           title: "Stuur Bericht",
-          description: "Email mij direct"
+          description: "Neem contact op voor kansen of samenwerking"
         },
         linkedin: {
           title: "Verbind op LinkedIn",
-          description: "Laten we professioneel verbinden"
+          description: "Laten we ons professionele netwerk uitbreiden"
         }
+      },
+      opportunities: {
+        title: "Open voor Nieuwe Kansen",
+        statement: "Ik ben actief op zoek naar mogelijkheden om mijn unieke combinatie van agrarische expertise en data science vaardigheden toe te passen. Of je nu op zoek bent naar een data-analist, agrarisch consultant, of iemand die de kloof kan overbruggen tussen traditionele landbouw en moderne technologie, ik zou graag verkennen hoe we kunnen samenwerken.",
+        fullTime: "Beschikbaar voor Voltijdse Posities",
+        consulting: "Open voor Adviesprojecten",
+        research: "Geïnteresseerd in Onderzoekssamenwerking"
       }
     }
   }

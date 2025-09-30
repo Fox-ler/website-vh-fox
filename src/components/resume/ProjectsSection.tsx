@@ -2,8 +2,10 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github, BarChart3, Leaf, Target, Sprout, Activity, BookOpen } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ProjectsSection = () => {
+  const { t } = useLanguage();
   const projects = [
     {
       title: "Mixed Method Thesis: Herbal Rich Grassland Analysis",
@@ -120,7 +122,7 @@ const ProjectsSection = () => {
               <IconComponent className={`w-6 h-6 text-${project.color}`} />
             </div>
             <Badge variant="outline" className="bg-muted/50 text-muted-foreground border-muted">
-              Future Project
+              {t('projects.futureProject')}
             </Badge>
           </div>
           
@@ -164,7 +166,7 @@ const ProjectsSection = () => {
         <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
         
         <div className="mb-4">
-          <h4 className="font-medium text-foreground mb-2">Key Highlights:</h4>
+          <h4 className="font-medium text-foreground mb-2">{t('projects.keyHighlights')}:</h4>
           <ul className="space-y-1">
             {project.highlights.map((highlight: string, index: number) => (
               <li key={index} className="flex items-start">
@@ -177,7 +179,7 @@ const ProjectsSection = () => {
         
         <div className="mb-4">
           <div className={`p-3 bg-${project.color}/5 rounded-lg border border-${project.color}/10`}>
-            <p className="text-sm font-medium text-foreground">Impact: {project.impact}</p>
+            <p className="text-sm font-medium text-foreground">{t('projects.impact')}: {project.impact}</p>
           </div>
         </div>
         
@@ -192,11 +194,11 @@ const ProjectsSection = () => {
         <div className="flex gap-2">
           <Button variant="outline" size="sm" className="bg-transparent">
             <ExternalLink className="w-4 h-4 mr-2" />
-            View Details
+            {t('projects.viewDetails')}
           </Button>
           <Button variant="outline" size="sm" className="bg-transparent">
             <Github className="w-4 h-4 mr-2" />
-            Source Code
+            {t('projects.sourceCode')}
           </Button>
         </div>
       </Card>
@@ -207,9 +209,9 @@ const ProjectsSection = () => {
     <section className="py-20 bg-gradient-section">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-6">{t('projects.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Research and development projects showcasing the application of data science in agriculture
+            {t('projects.description')}
           </p>
         </div>
         
@@ -223,7 +225,7 @@ const ProjectsSection = () => {
           
           {/* Future Projects */}
           <div className="mb-8">
-            <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">Future Projects & Research Interests</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">{t('projects.future')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {futureProjects.map((project, index) => (
                 <ProjectCard key={index} project={project} isFuture={true} />
@@ -233,10 +235,10 @@ const ProjectsSection = () => {
           
           <div className="text-center">
             <p className="text-muted-foreground mb-4">
-              Interested in collaborating on agricultural data science projects?
+              {t('projects.contactText')}
             </p>
             <Button className="bg-agricultural-green hover:bg-agricultural-green/90 text-white">
-              Get In Touch
+              {t('projects.getInTouch')}
             </Button>
           </div>
         </div>

@@ -1,8 +1,10 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin, Building } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ExperienceSection = () => {
+  const { t } = useLanguage();
   const experiences = [
     {
       title: "Data Intelligence Specialist",
@@ -101,11 +103,11 @@ const ExperienceSection = () => {
           <div className="flex gap-2">
             {exp.current && (
               <Badge variant="default" className="bg-agricultural-green/10 text-agricultural-green border-agricultural-green/20">
-                Current
+                {t('experience.current')}
               </Badge>
             )}
             <Badge variant="secondary" className="bg-data-blue/10 text-data-blue border-data-blue/20">
-              {isInternship ? 'Internship' : exp.type}
+              {isInternship ? t('experience.internship') : exp.type}
             </Badge>
           </div>
         </div>
@@ -126,22 +128,22 @@ const ExperienceSection = () => {
     <section className="py-20 bg-gradient-section">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">Professional Experience</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-6">{t('experience.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A unique blend of hands-on agricultural experience and advanced data science applications
+            {t('experience.description')}
           </p>
         </div>
         
         <div className="max-w-4xl mx-auto">
           <div className="mb-12">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Current Positions</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-6">{t('experience.positions')}</h3>
             {experiences.map((exp, index) => (
               <ExperienceCard key={index} exp={exp} />
             ))}
           </div>
           
           <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Internships & Training</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-6">{t('experience.internships')}</h3>
             {internships.map((exp, index) => (
               <ExperienceCard key={index} exp={exp} isInternship={true} />
             ))}

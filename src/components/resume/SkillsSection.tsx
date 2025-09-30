@@ -10,8 +10,10 @@ import {
   Target,
   TrendingUp
 } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const SkillsSection = () => {
+  const { t } = useLanguage();
   const skillCategories = [
     {
       title: "Data Science & Analytics",
@@ -85,9 +87,9 @@ const SkillsSection = () => {
     <section className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-6">{t('skills.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive skill set bridging traditional agriculture with modern data science
+            {t('skills.description')}
           </p>
         </div>
         
@@ -129,7 +131,7 @@ const SkillsSection = () => {
                 <div className="w-16 h-16 bg-earth-brown/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Languages className="w-8 h-8 text-earth-brown" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">Languages</h3>
+                <h3 className="text-xl font-semibold text-foreground">{t('skills.languages')}</h3>
               </div>
               
               <div className="space-y-4">
@@ -156,7 +158,7 @@ const SkillsSection = () => {
                 <div className="w-16 h-16 bg-tech-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="w-8 h-8 text-tech-accent" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">Certifications</h3>
+                <h3 className="text-xl font-semibold text-foreground">{t('skills.certifications')}</h3>
               </div>
               
               <div className="space-y-4">

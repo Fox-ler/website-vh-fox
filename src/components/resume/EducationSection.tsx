@@ -1,8 +1,10 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin, GraduationCap } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const EducationSection = () => {
+  const { t } = useLanguage();
   const education = [
     {
       degree: "Bachelor in Animal and Livestock Husbandry",
@@ -42,9 +44,9 @@ const EducationSection = () => {
     <section className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">Education</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-6">{t('education.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive educational journey combining agricultural expertise with modern data science
+            {t('education.description')}
           </p>
         </div>
         
@@ -67,7 +69,7 @@ const EducationSection = () => {
                 }`}>
                   <div className="flex flex-wrap items-center gap-2 mb-3">
                     <Badge variant={edu.status === 'Current' ? 'default' : 'secondary'} className="bg-agricultural-green/10 text-agricultural-green border-agricultural-green/20">
-                      {edu.status}
+                      {edu.status === 'Current' ? t('education.current') : t('education.completed')}
                     </Badge>
                     <div className="flex items-center text-muted-foreground text-sm">
                       <Calendar className="w-4 h-4 mr-1" />
