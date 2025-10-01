@@ -248,52 +248,20 @@ const translations = {
           color: "data-blue"
         },
         {
-          title: "Duckweed Growth Optimization Research",
-          description: "Experimental research investigating the growth potential of duckweed using thin fraction manure as a nutrient source, exploring sustainable protein feed alternatives for livestock farming.",
-          type: "Laboratory Research",
+          title: "University Research Projects",
+          description: "Conducted multiple research initiatives during university studies, including experimental research on sustainable feed alternatives (duckweed cultivation), clinical studies on natural health interventions (garlic supplementation effects), and comprehensive literature reviews on environmental factors affecting livestock health (mycotoxins and reproductive health).",
+          type: "Academic Research",
           status: "Completed",
-          technologies: ["Experimental Design", "Growth Analysis", "Nutrient Management", "Statistical Analysis"],
+          technologies: ["Experimental Design", "Clinical Analysis", "Literature Review", "Statistical Analysis", "Research Methodology"],
           highlights: [
-            "Designed controlled experiments for optimal growth conditions",
-            "Analyzed nutrient utilization efficiency from manure fractions",
-            "Evaluated sustainability and scalability of duckweed cultivation",
-            "Measured protein content and growth rates under various conditions",
-            "Assessed environmental impact and feasibility for farm implementation"
+            "Designed and executed controlled experiments for sustainable feed alternatives",
+            "Conducted clinical trials analyzing natural health interventions in dairy cattle",
+            "Performed comprehensive literature reviews on environmental health factors",
+            "Applied statistical methods to measure and validate research outcomes",
+            "Synthesized diverse research findings into practical recommendations"
           ],
-          impact: "Contributed to sustainable feed alternative research for livestock nutrition",
+          impact: "Contributed to multiple areas of sustainable livestock farming and animal health research",
           color: "agricultural-green"
-        },
-        {
-          title: "Garlic Supplements Impact on Cow Health",
-          description: "Clinical research study examining the effects of garlic supplementation on dairy cow health, specifically analyzing somatic cell count variations in milk production and overall animal wellbeing.",
-          type: "Clinical Research",
-          status: "Completed",
-          technologies: ["Clinical Analysis", "Milk Quality Testing", "Statistical Modeling", "Health Monitoring"],
-          highlights: [
-            "Conducted controlled feeding trials with garlic supplements",
-            "Performed comprehensive milk cell count analysis over extended periods",
-            "Applied statistical methods to measure health improvements",
-            "Monitored animal behavior and productivity indicators",
-            "Analyzed cost-benefit implications for dairy operations"
-          ],
-          impact: "Provided evidence-based insights for natural health interventions in dairy farming",
-          color: "data-blue"
-        },
-        {
-          title: "Mycotoxins and Cow Reproductive Health Literature Study",
-          description: "Comprehensive literature review analyzing the relationship between mycotoxin exposure and reproductive health in dairy cattle, synthesizing current research findings to identify knowledge gaps and recommendations.",
-          type: "Literature Review",
-          status: "Completed",
-          technologies: ["Systematic Review", "Meta-Analysis", "Research Synthesis", "Scientific Writing"],
-          highlights: [
-            "Reviewed 50+ peer-reviewed publications on mycotoxin effects",
-            "Identified key relationships between toxin exposure and fertility rates",
-            "Synthesized findings into actionable recommendations for farmers",
-            "Analyzed methodological approaches across different studies",
-            "Provided future research directions and practical implications"
-          ],
-          impact: "Enhanced understanding of environmental factors affecting cattle reproductive health",
-          color: "tech-accent"
         }
       ],
       futureProjects: [
@@ -637,52 +605,20 @@ const translations = {
           color: "data-blue"
         },
         {
-          title: "Kroos Groei-Optimalisatie Onderzoek",
-          description: "Experimenteel onderzoek naar het groeipotentieel van kroos met dunne fractie mest als voedingsbron, waarbij duurzame eiwitvoederalternatieven voor veehouderij worden verkend.",
-          type: "Laboratoriumonderzoek",
+          title: "Universitaire Onderzoeksprojecten",
+          description: "Meerdere onderzoeksinitiatieven uitgevoerd tijdens universitaire studie, waaronder experimenteel onderzoek naar duurzame voederalternatieven (krooscultivatie), klinische studies naar natuurlijke gezondheidsinterventies (knoflooksupplementatie-effecten), en uitgebreide literatuurstudies over omgevingsfactoren die de gezondheid van vee beïnvloeden (mycotoxinen en reproductieve gezondheid).",
+          type: "Academisch Onderzoek",
           status: "Afgerond",
-          technologies: ["Experimenteel Ontwerp", "Groei-analyse", "Voedingsstoffenbeheer", "Statistische Analyse"],
+          technologies: ["Experimenteel Ontwerp", "Klinische Analyse", "Literatuurstudie", "Statistische Analyse", "Onderzoeksmethodologie"],
           highlights: [
-            "Gecontroleerde experimenten ontworpen voor optimale groeiomstandigheden",
-            "Voedingsstofbenuttingsefficiëntie uit mestfracties geanalyseerd",
-            "Duurzaamheid en schaalbaarheid van krooscultivatie geëvalueerd",
-            "Eiwitgehalte en groeisnelheden gemeten onder verschillende omstandigheden",
-            "Milieueffect en haalbaarheid voor bedrijfsimplementatie beoordeeld"
+            "Gecontroleerde experimenten ontworpen en uitgevoerd voor duurzame voederalternatieven",
+            "Klinische proeven uitgevoerd ter analyse van natuurlijke gezondheidsinterventies bij melkvee",
+            "Uitgebreide literatuurstudies uitgevoerd over omgevingsgezondheidsfactoren",
+            "Statistische methoden toegepast om onderzoeksresultaten te meten en valideren",
+            "Diverse onderzoeksbevindingen gesynthetiseerd tot praktische aanbevelingen"
           ],
-          impact: "Bijgedragen aan onderzoek naar duurzame voederalternatieven voor veevoeding",
+          impact: "Bijgedragen aan meerdere gebieden van duurzame veehouderij en diergezondheidonderzoek",
           color: "agricultural-green"
-        },
-        {
-          title: "Knoflooksupplementen Impact op Koeiengezondheid",
-          description: "Klinische onderzoeksstudie naar de effecten van knoflooksuppletie op melkkoeiengezondheid, specifiek met analyse van somatische celgetalvariaties in melkproductie en algemeen dierenwelzijn.",
-          type: "Klinisch Onderzoek",
-          status: "Afgerond",
-          technologies: ["Klinische Analyse", "Melkkwaliteitstesten", "Statistische Modellering", "Gezondheidsmonitoring"],
-          highlights: [
-            "Gecontroleerde voederproeven uitgevoerd met knoflooksupplementen",
-            "Uitgebreide melkcelgetalanalyse uitgevoerd over langere perioden",
-            "Statistische methoden toegepast om gezondheidsverbeteringen te meten",
-            "Diergedrag en productiviteitsindicatoren gemonitord",
-            "Kosten-batenimplicaties voor melkveebedrijven geanalyseerd"
-          ],
-          impact: "Evidence-based inzichten geleverd voor natuurlijke gezondheidsinterventies in melkveehouderij",
-          color: "data-blue"
-        },
-        {
-          title: "Mycotoxinen en Reproductieve Gezondheid Koeien Literatuurstudie",
-          description: "Uitgebreide literatuurstudie die de relatie analyseert tussen mycotoxine blootstelling en reproductieve gezondheid bij melkvee, waarbij huidige onderzoeksbevindingen worden gesynthetiseerd om kennishiaten en aanbevelingen te identificeren.",
-          type: "Literatuurstudie",
-          status: "Afgerond",
-          technologies: ["Systematische Review", "Meta-analyse", "Onderzoekssynthese", "Wetenschappelijk Schrijven"],
-          highlights: [
-            "50+ peer-reviewed publicaties over mycotoxine-effecten beoordeeld",
-            "Belangrijke relaties geïdentificeerd tussen toxine blootstelling en vruchtbaarheidspercentages",
-            "Bevindingen gesynthetiseerd tot praktische aanbevelingen voor boeren",
-            "Methodologische benaderingen over verschillende studies geanalyseerd",
-            "Toekomstige onderzoeksrichtingen en praktische implicaties verstrekt"
-          ],
-          impact: "Verbeterd begrip van omgevingsfactoren die reproductieve gezondheid van vee beïnvloeden",
-          color: "tech-accent"
         }
       ],
       futureProjects: [
