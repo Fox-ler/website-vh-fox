@@ -135,29 +135,10 @@ const ProjectsSection = () => {
         
         <div className="max-w-6xl mx-auto">
           {/* Current/Completed Projects */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}
-          </div>
-          
-          {/* Future Projects */}
-          <div className="mb-8">
-            <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">{t('projects.future')}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {futureProjects.map((project, index) => (
-                <ProjectCard key={index} project={project} isFuture={true} />
-              ))}
-            </div>
-          </div>
-          
-          <div className="text-center">
-            <p className="text-muted-foreground mb-4">
-              {t('projects.contactText')}
-            </p>
-            <Button className="bg-agricultural-green hover:bg-agricultural-green/90 text-white">
-              {t('projects.getInTouch')}
-            </Button>
           </div>
         </div>
       </div>
