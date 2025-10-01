@@ -92,7 +92,7 @@ const translations = {
           title: "Data Intelligence Specialist",
           company: "Agrifirm Data Intelligence",
           location: "Netherlands",
-          period: "February 2025 - January 2026",
+          period: "July 2024 - January 2025",
           type: "Full-time",
           current: true,
           highlights: [
@@ -101,6 +101,21 @@ const translations = {
             "Presented complex analytical results with UX design principles",
             "Analyzed operational data to identify opportunities for process improvement",
             "Collaborated with cross-functional teams to optimize agricultural workflows"
+          ]
+        },
+        {
+          title: "Data Intelligence Trainee",
+          company: "Agrifirm Data Intelligence",
+          location: "Netherlands",
+          period: "February 2024 - June 2024",
+          type: "Traineeship",
+          current: false,
+          highlights: [
+            "Introduced to Python and data analysis methodologies in agricultural context",
+            "Learned machine learning fundamentals and their applications in farming",
+            "Developed skills in data visualization and presentation techniques",
+            "Assisted in analyzing agricultural datasets and identifying patterns",
+            "Gained foundation in agricultural data intelligence workflows"
           ]
         },
         {
@@ -449,7 +464,7 @@ const translations = {
           title: "Data Intelligence Specialist",
           company: "Agrifirm Data Intelligence",
           location: "Nederland",
-          period: "Februari 2025 - Januari 2026",
+          period: "Juli 2024 - Januari 2025",
           type: "Voltijd",
           current: true,
           highlights: [
@@ -458,6 +473,21 @@ const translations = {
             "Complexe analytische resultaten gepresenteerd met UX-ontwerpprincipes",
             "Operationele data geanalyseerd om verbetermogelijkheden te identificeren",
             "Samengewerkt met multifunctionele teams om agrarische workflows te optimaliseren"
+          ]
+        },
+        {
+          title: "Data Intelligence Trainee",
+          company: "Agrifirm Data Intelligence",
+          location: "Nederland",
+          period: "Februari 2024 - Juni 2024",
+          type: "Stage",
+          current: false,
+          highlights: [
+            "Kennisgemaakt met Python en data-analyse methodologieën in agrarische context",
+            "Machine learning fundamenten geleerd en hun toepassingen in de landbouw",
+            "Vaardigheden ontwikkeld in datavisualisatie en presentatietechnieken",
+            "Assisteerde bij het analyseren van agrarische datasets en het identificeren van patronen",
+            "Basis verworven in agricultural data intelligence workflows"
           ]
         },
         {
