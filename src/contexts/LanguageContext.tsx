@@ -58,7 +58,7 @@ const translations = {
         institution: "Aeres University of Applied Sciences",
         location: "Dronten",
         period: "September 2021 - August 2025",
-        status: "Current",
+        status: "Completed",
         description: "Comprehensive program combining theoretical knowledge with practical applications in livestock management and agricultural sciences."
       },
       {
@@ -66,7 +66,7 @@ const translations = {
         institution: "Utrecht University",
         location: "Utrecht",
         period: "September 2024 - January 2025",
-        status: "Current",
+        status: "Completed",
         description: "Specialized minor focusing on machine learning, statistical analysis, and data visualization techniques applied to real-world problems."
       },
       {
@@ -430,7 +430,7 @@ const translations = {
         institution: "Aeres Hogeschool",
         location: "Dronten",
         period: "September 2021 - Augustus 2025",
-        status: "Current",
+        status: "Completed",
         description: "Uitgebreid programma dat theoretische kennis combineert met praktische toepassingen in veehouderijmanagement en agrarische wetenschappen."
       },
       {
@@ -438,7 +438,7 @@ const translations = {
         institution: "Universiteit Utrecht",
         location: "Utrecht",
         period: "September 2024 - Januari 2025",
-        status: "Current",
+        status: "Completed",
         description: "Gespecialiseerde minor gericht op machine learning, statistische analyse en datavisualisatietechnieken toegepast op praktijkproblemen."
       },
       {
