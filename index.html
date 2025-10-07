@@ -1,25 +1,872 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agricultural Data Scientist | Expert in Livestock Farming & Analytics</title>
     <meta name="description" content="Experienced agricultural data scientist combining 8+ years of livestock farming expertise with advanced data analytics. Specialized in Python, machine learning, and agricultural process optimization." />
     <meta name="keywords" content="agricultural data scientist, livestock farming, data analytics, Python, machine learning, dairy farming, agricultural technology, Netherlands" />
-    <meta name="author" content="Agricultural Data Scientist" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --bg-primary: hsl(45, 20%, 98%);
+            --text-primary: hsl(140, 15%, 15%);
+            --green-primary: hsl(142, 35%, 25%);
+            --green-light: hsl(142, 45%, 35%);
+            --blue-accent: hsl(200, 65%, 50%);
+            --brown-earth: hsl(25, 35%, 55%);
+            --card-bg: #ffffff;
+            --border-color: hsl(45, 20%, 88%);
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Language Toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: var(--card-bg);
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--green-primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('src/assets/hero-agriculture-data.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: var(--green-primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--green-light);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .stats {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--green-primary);
+            text-align: center;
+        }
+        
+        .section-desc {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            opacity: 0.8;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--green-primary);
+        }
+        
+        .card-text {
+            color: var(--text-primary);
+            opacity: 0.8;
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--green-primary);
+        }
+        
+        .timeline-item {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -46px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--green-primary);
+            border: 3px solid var(--bg-primary);
+        }
+        
+        .timeline-content {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .badge-green {
+            background: hsl(142, 45%, 90%);
+            color: var(--green-primary);
+        }
+        
+        .badge-blue {
+            background: hsl(200, 65%, 90%);
+            color: var(--blue-accent);
+        }
+        
+        /* Skills */
+        .skill-category {
+            margin-bottom: 40px;
+        }
+        
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .skill-name {
+            font-weight: 600;
+            color: var(--green-primary);
+        }
+        
+        .skill-desc {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+        
+        /* Projects */
+        .project-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+        
+        .project-header {
+            margin-bottom: 20px;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            color: var(--green-primary);
+            margin-bottom: 10px;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        
+        .tech-tag {
+            background: hsl(142, 45%, 95%);
+            color: var(--green-primary);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+        
+        .highlights {
+            margin-top: 20px;
+        }
+        
+        .highlights li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-icon {
+            font-size: 1.8rem;
+        }
+        
+        .contact-label {
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+        
+        .contact-value {
+            font-weight: 600;
+            color: var(--green-primary);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .timeline {
+                padding-left: 30px;
+            }
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle" onclick="toggleLanguage()">
+        <span id="lang-text">🇬🇧 EN</span>
+    </div>
 
-    <meta property="og:title" content="Agricultural Data Scientist | Expert in Livestock Farming & Analytics" />
-    <meta property="og:description" content="Experienced agricultural data scientist combining 8+ years of livestock farming expertise with advanced data analytics. Specialized in Python, machine learning, and agricultural process optimization." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">Agricultural Data Scientist</h1>
+            <p id="hero-desc">Combining agricultural expertise with advanced data science to optimize livestock farming through predictive modeling and data-driven insights.</p>
+            <div class="hero-buttons">
+                <a href="mailto:your.email@example.com" class="btn btn-primary" id="btn-contact">Contact Me</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                <a href="public/your-resume.pdf" download class="btn btn-secondary" id="btn-cv">Download CV</a>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label" id="stat-exp">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label" id="stat-expertise">Areas of Expertise</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">International</span>
+                    <span class="stat-label" id="stat-scope">Scope</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title" id="about-title">About Me</h2>
+            <p class="section-desc" id="about-intro">I am a passionate Agricultural Data Scientist with a unique blend of hands-on farming experience and advanced analytical skills. My journey from practical agriculture to data science allows me to bridge the gap between traditional farming knowledge and modern technological solutions.</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3 class="card-title" id="card-expert-title">Agricultural Expert</h3>
+                    <p class="card-text" id="card-expert-desc">Deep understanding of livestock farming, animal health, and sustainable agriculture practices from years of hands-on experience.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title" id="card-scientist-title">Data Scientist</h3>
+                    <p class="card-text" id="card-scientist-desc">Proficient in machine learning, statistical analysis, and predictive modeling with a focus on agricultural applications.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3 class="card-title" id="card-team-title">Team Player</h3>
+                    <p class="card-text" id="card-team-desc">Experienced in collaborating with diverse teams, from farm workers to data scientists, bridging technical and agricultural domains.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title" id="card-innovation-title">Innovation Focus</h3>
+                    <p class="card-text" id="card-innovation-desc">Constantly exploring new technologies and research methodologies to solve complex agricultural challenges and drive industry progress.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: var(--green-primary); font-size: 1.5rem; margin-bottom: 15px;" id="profile-title">Professional Profile</h3>
+                <p style="line-height: 1.8;" id="profile-text">With a strong foundation in animal sciences and ongoing studies in Applied Data Science and AI, I specialize in developing predictive models and data-driven solutions for the livestock sector. My work focuses on optimizing feed intake predictions, analyzing cow health metrics, and improving farm management through innovative technological applications. I am deeply curious about research and continuously explore new ways to apply scientific methods to real-world agricultural challenges.</p>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Education Section -->
+    <section id="education" style="background: linear-gradient(180deg, hsl(90, 25%, 85%) 0%, hsl(45, 20%, 98%) 100%);">
+        <div class="container">
+            <h2 class="section-title" id="edu-title">Education</h2>
+            <p class="section-desc" id="edu-desc">A comprehensive educational journey combining agricultural expertise with modern data science</p>
+            
+            <div class="timeline" id="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="badge badge-green" id="edu1-status">Completed</span>
+                        <span style="color: var(--blue-accent); font-weight: 600; display: block; margin-bottom: 5px;" id="edu1-period">September 2021 - August 2025</span>
+                        <h3 style="color: var(--green-primary); font-size: 1.3rem; margin-bottom: 5px;" id="edu1-degree">Bachelor in Animal and Livestock Husbandry</h3>
+                        <p style="font-weight: 600; margin-bottom: 3px;" id="edu1-institution">Aeres University of Applied Sciences</p>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px;" id="edu1-location">Dronten</p>
+                        <p id="edu1-desc">Comprehensive program combining theoretical knowledge with practical applications in livestock management and agricultural sciences.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="badge badge-green" id="edu2-status">Completed</span>
+                        <span style="color: var(--blue-accent); font-weight: 600; display: block; margin-bottom: 5px;" id="edu2-period">September 2024 - January 2025</span>
+                        <h3 style="color: var(--green-primary); font-size: 1.3rem; margin-bottom: 5px;" id="edu2-degree">Data Science Minor</h3>
+                        <p style="font-weight: 600; margin-bottom: 3px;" id="edu2-institution">Utrecht University</p>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px;" id="edu2-location">Utrecht</p>
+                        <p id="edu2-desc">Specialized minor focusing on machine learning, statistical analysis, and data visualization techniques applied to real-world problems.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="badge badge-green" id="edu3-status">Completed</span>
+                        <span style="color: var(--blue-accent); font-weight: 600; display: block; margin-bottom: 5px;" id="edu3-period">September 2018 - August 2021</span>
+                        <h3 style="color: var(--green-primary); font-size: 1.3rem; margin-bottom: 5px;" id="edu3-degree">MBO Professional Expert in Livestock Farming, Level 4</h3>
+                        <p style="font-weight: 600; margin-bottom: 3px;" id="edu3-institution">Zone College</p>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px;" id="edu3-location">Zwolle</p>
+                        <p id="edu3-desc">Professional certification in livestock farming with hands-on training in modern agricultural practices and animal husbandry.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="badge badge-green" id="edu4-status">Completed</span>
+                        <span style="color: var(--blue-accent); font-weight: 600; display: block; margin-bottom: 5px;" id="edu4-period">September 2014 - August 2018</span>
+                        <h3 style="color: var(--green-primary); font-size: 1.3rem; margin-bottom: 5px;" id="edu4-degree">TL Level (Graduated with Honors)</h3>
+                        <p style="font-weight: 600; margin-bottom: 3px;" id="edu4-institution">Reggesteyn</p>
+                        <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px;" id="edu4-location">Nijverdal</p>
+                        <p id="edu4-desc">Secondary education completed with honors, demonstrating strong academic performance and dedication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title" id="exp-title">Professional Experience</h2>
+            <p class="section-desc" id="exp-desc">A unique blend of hands-on agricultural experience and advanced data science applications</p>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="badge badge-blue" id="exp1-type">Full-time</span>
+                    <span style="color: var(--blue-accent); font-weight: 600; margin-left: 10px;" id="exp1-period">July 2024 - January 2025</span>
+                    <h3 class="project-title" id="exp1-title">Data Intelligence Specialist</h3>
+                    <p style="font-weight: 600; margin-bottom: 5px;" id="exp1-company">Agrifirm Data Intelligence</p>
+                    <p style="font-size: 0.9rem; opacity: 0.7;" id="exp1-location">Netherlands</p>
+                </div>
+                <ul class="highlights" id="exp1-highlights">
+                    <li>Applied Python and advanced data analysis techniques to agricultural datasets</li>
+                    <li>Implemented machine learning models and translated insights into practical applications</li>
+                    <li>Presented complex analytical results with UX design principles</li>
+                    <li>Analyzed operational data to identify opportunities for process improvement</li>
+                    <li>Collaborated with cross-functional teams to optimize agricultural workflows</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="badge badge-blue" id="exp2-type">Traineeship</span>
+                    <span style="color: var(--blue-accent); font-weight: 600; margin-left: 10px;" id="exp2-period">February 2024 - June 2024</span>
+                    <h3 class="project-title" id="exp2-title">Data Intelligence Trainee</h3>
+                    <p style="font-weight: 600; margin-bottom: 5px;" id="exp2-company">Agrifirm Data Intelligence</p>
+                    <p style="font-size: 0.9rem; opacity: 0.7;" id="exp2-location">Netherlands</p>
+                </div>
+                <ul class="highlights" id="exp2-highlights">
+                    <li>Introduced to Python and data analysis methodologies in agricultural context</li>
+                    <li>Learned machine learning fundamentals and their applications in farming</li>
+                    <li>Developed skills in data visualization and presentation techniques</li>
+                    <li>Assisted in analyzing agricultural datasets and identifying patterns</li>
+                    <li>Gained foundation in agricultural data intelligence workflows</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="badge badge-green" id="exp3-type">Multiple Roles</span>
+                    <span style="color: var(--blue-accent); font-weight: 600; margin-left: 10px;" id="exp3-period">2017 - Present</span>
+                    <h3 class="project-title" id="exp3-title">Agricultural Sector Professional</h3>
+                    <p style="font-weight: 600; margin-bottom: 5px;" id="exp3-company">Various Agricultural Operations</p>
+                    <p style="font-size: 0.9rem; opacity: 0.7;" id="exp3-location">Netherlands</p>
+                </div>
+                <ul class="highlights" id="exp3-highlights">
+                    <li>8+ years of comprehensive experience across dairy and pig farming operations</li>
+                    <li>Specialized role as professional milker with expertise in modern milking systems</li>
+                    <li>Gained practical experience on home-based dairy farm operations</li>
+                    <li>Developed deep understanding of livestock management and farm operations</li>
+                    <li>Built strong foundation in traditional farming practices and animal husbandry</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background: linear-gradient(180deg, hsl(90, 25%, 85%) 0%, hsl(45, 20%, 98%) 100%);">
+        <div class="container">
+            <h2 class="section-title" id="skills-title">Skills & Expertise</h2>
+            <p class="section-desc" id="skills-desc">A comprehensive skill set bridging traditional agriculture with modern data science</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title" id="skills-cat1">📊 Data Science & Analytics</h3>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-desc">Data analysis, machine learning, automation</div>
+                        </div>
+                        <span class="badge badge-green">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-desc">Database queries, data manipulation</div>
+                        </div>
+                        <span class="badge badge-green">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">Machine Learning</div>
+                            <div class="skill-desc">Predictive modeling, data mining</div>
+                        </div>
+                        <span class="badge badge-blue">Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title" id="skills-cat2">🌾 Agricultural Expertise</h3>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">Livestock Farming</div>
+                            <div class="skill-desc">8+ years hands-on experience</div>
+                        </div>
+                        <span class="badge badge-green">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">Dairy Operations</div>
+                            <div class="skill-desc">Milking systems, herd management</div>
+                        </div>
+                        <span class="badge badge-green">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">Animal Husbandry</div>
+                            <div class="skill-desc">Animal health, breeding, nutrition</div>
+                        </div>
+                        <span class="badge badge-green">Expert</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title" id="skills-cat3">💡 Technical & Communication</h3>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">Data Visualization</div>
+                            <div class="skill-desc">Charts, dashboards, storytelling</div>
+                        </div>
+                        <span class="badge badge-green">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">Project Management</div>
+                            <div class="skill-desc">Planning, execution, delivery</div>
+                        </div>
+                        <span class="badge badge-green">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <div>
+                            <div class="skill-name">Teamwork</div>
+                            <div class="skill-desc">Collaboration, leadership</div>
+                        </div>
+                        <span class="badge badge-green">Expert</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px;">
+                <h3 style="color: var(--green-primary); font-size: 1.8rem; margin-bottom: 30px; text-align: center;" id="languages-title">Languages & Certifications</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <h4 style="color: var(--green-primary); margin-bottom: 20px;">🇳🇱 Dutch - Native</h4>
+                        <p>Native speaker</p>
+                    </div>
+                    <div class="card">
+                        <h4 style="color: var(--green-primary); margin-bottom: 20px;">🇬🇧 English - C1</h4>
+                        <p>Passed C1 level certification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" id="projects-title">Featured Projects</h2>
+            <p class="section-desc" id="projects-desc">Research and development projects showcasing the application of data science in agriculture</p>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="badge badge-green">Academic Research</span>
+                    <span class="badge badge-blue" style="margin-left: 10px;">Completed</span>
+                    <h3 class="project-title" id="proj1-title">Mixed Method Thesis: Herbal Rich Grassland Analysis</h3>
+                </div>
+                <p style="margin-bottom: 20px;" id="proj1-desc">Comprehensive research project combining data mining techniques with agricultural field studies to analyze the impact of herbal rich grasslands on livestock nutrition and farm productivity. Developed predictive models based on feed intake patterns and nutritional outcomes.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Data Mining</span>
+                    <span class="tech-tag">Statistical Analysis</span>
+                    <span class="tech-tag">Agricultural Research</span>
+                    <span class="tech-tag">Predictive Modeling</span>
+                </div>
+                <ul class="highlights" id="proj1-highlights">
+                    <li>Applied advanced data mining techniques to analyze grassland composition</li>
+                    <li>Developed predictive models for feed intake optimization</li>
+                    <li>Combined quantitative data analysis with qualitative field observations</li>
+                    <li>Identified key factors influencing livestock nutrition from herbal grasslands</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="badge badge-blue">Data Science Project</span>
+                    <span class="badge badge-green" style="margin-left: 10px;">Ongoing</span>
+                    <h3 class="project-title" id="proj2-title">Feed Intake Prediction Model</h3>
+                </div>
+                <p style="margin-bottom: 20px;" id="proj2-desc">Machine learning project focused on predicting optimal feed intake patterns for dairy cattle based on environmental factors, animal characteristics, and historical consumption data.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">Data Visualization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: linear-gradient(180deg, hsl(90, 25%, 85%) 0%, hsl(45, 20%, 98%) 100%);">
+        <div class="container">
+            <h2 class="section-title" id="contact-title">Get In Touch</h2>
+            <p class="section-desc" id="contact-desc">Ready to discuss agricultural data science opportunities, collaboration, or just want to connect? I'd love to hear from you.</p>
+            
+            <div class="contact-grid">
+                <a href="mailto:your.email@example.com" class="contact-item" style="text-decoration: none; color: inherit;">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <div class="contact-label" id="contact-email-label">Email Address</div>
+                        <div class="contact-value">your.email@example.com</div>
+                    </div>
+                </a>
+                
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-item" style="text-decoration: none; color: inherit;">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <div class="contact-label" id="contact-linkedin-label">LinkedIn Profile</div>
+                        <div class="contact-value">Connect with me</div>
+                    </div>
+                </a>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <div class="contact-label" id="contact-location-label">Location</div>
+                        <div class="contact-value">Netherlands</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: var(--green-primary); font-size: 1.5rem; margin-bottom: 15px;" id="opportunities-title">Open to New Opportunities</h3>
+                <p style="line-height: 1.8;" id="opportunities-text">I'm actively seeking opportunities to apply my unique combination of agricultural expertise and data science skills. Whether you're looking for a data analyst, agricultural consultant, or someone who can bridge the gap between traditional farming and modern technology, I'd love to explore how we can work together.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--green-primary); color: white; text-align: center; padding: 40px 20px;">
+        <p>&copy; 2025 Agricultural Data Scientist. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentLang = 'en';
+        
+        const translations = {
+            en: {
+                langText: '🇬🇧 EN',
+                heroTitle: 'Agricultural Data Scientist',
+                heroDesc: 'Combining agricultural expertise with advanced data science to optimize livestock farming through predictive modeling and data-driven insights.',
+                btnContact: 'Contact Me',
+                btnCV: 'Download CV',
+                statExp: 'Years Experience',
+                statExpertise: 'Areas of Expertise',
+                statScope: 'International Scope',
+                aboutTitle: 'About Me',
+                aboutIntro: 'I am a passionate Agricultural Data Scientist with a unique blend of hands-on farming experience and advanced analytical skills. My journey from practical agriculture to data science allows me to bridge the gap between traditional farming knowledge and modern technological solutions.',
+                cardExpertTitle: 'Agricultural Expert',
+                cardExpertDesc: 'Deep understanding of livestock farming, animal health, and sustainable agriculture practices from years of hands-on experience.',
+                cardScientistTitle: 'Data Scientist',
+                cardScientistDesc: 'Proficient in machine learning, statistical analysis, and predictive modeling with a focus on agricultural applications.',
+                cardTeamTitle: 'Team Player',
+                cardTeamDesc: 'Experienced in collaborating with diverse teams, from farm workers to data scientists, bridging technical and agricultural domains.',
+                cardInnovationTitle: 'Innovation Focus',
+                cardInnovationDesc: 'Constantly exploring new technologies and research methodologies to solve complex agricultural challenges and drive industry progress.',
+                profileTitle: 'Professional Profile',
+                profileText: 'With a strong foundation in animal sciences and ongoing studies in Applied Data Science and AI, I specialize in developing predictive models and data-driven solutions for the livestock sector. My work focuses on optimizing feed intake predictions, analyzing cow health metrics, and improving farm management through innovative technological applications. I am deeply curious about research and continuously explore new ways to apply scientific methods to real-world agricultural challenges.',
+                eduTitle: 'Education',
+                eduDesc: 'A comprehensive educational journey combining agricultural expertise with modern data science',
+                expTitle: 'Professional Experience',
+                expDesc: 'A unique blend of hands-on agricultural experience and advanced data science applications',
+                skillsTitle: 'Skills & Expertise',
+                skillsDesc: 'A comprehensive skill set bridging traditional agriculture with modern data science',
+                projectsTitle: 'Featured Projects',
+                projectsDesc: 'Research and development projects showcasing the application of data science in agriculture',
+                contactTitle: 'Get In Touch',
+                contactDesc: 'Ready to discuss agricultural data science opportunities, collaboration, or just want to connect? I\'d love to hear from you.',
+                opportunitiesTitle: 'Open to New Opportunities',
+                opportunitiesText: 'I\'m actively seeking opportunities to apply my unique combination of agricultural expertise and data science skills. Whether you\'re looking for a data analyst, agricultural consultant, or someone who can bridge the gap between traditional farming and modern technology, I\'d love to explore how we can work together.'
+            },
+            nl: {
+                langText: '🇳🇱 NL',
+                heroTitle: 'Agrarische Data Scientist',
+                heroDesc: 'Het combineren van agrarische expertise met geavanceerde data science om de veehouderij te optimaliseren door middel van voorspellende modellen en datagedreven inzichten.',
+                btnContact: 'Neem Contact Op',
+                btnCV: 'Download CV',
+                statExp: 'Jaar Ervaring',
+                statExpertise: 'Expertisegebieden',
+                statScope: 'Internationale Scope',
+                aboutTitle: 'Over Mij',
+                aboutIntro: 'Ik ben een gepassioneerde Agrarische Data Scientist met een unieke combinatie van praktijkervaring in de landbouw en geavanceerde analytische vaardigheden. Mijn reis van praktische landbouw naar data science stelt me in staat om de kloof te overbruggen tussen traditionele agrarische kennis en moderne technologische oplossingen.',
+                cardExpertTitle: 'Agrarisch Expert',
+                cardExpertDesc: 'Diepgaand begrip van veehouderij, diergezondheid en duurzame landbouwpraktijken uit jarenlange praktijkervaring.',
+                cardScientistTitle: 'Data Scientist',
+                cardScientistDesc: 'Bedreven in machine learning, statistische analyse en voorspellende modellering met focus op agrarische toepassingen.',
+                cardTeamTitle: 'Teamspeler',
+                cardTeamDesc: 'Ervaren in samenwerking met diverse teams, van boeren tot data scientists, waarbij technische en agrarische domeinen worden verbonden.',
+                cardInnovationTitle: 'Innovatiegerichte',
+                cardInnovationDesc: 'Voortdurend op zoek naar nieuwe technologieën en onderzoeksmethodologieën om complexe agrarische uitdagingen op te lossen en de industrie vooruit te helpen.',
+                profileTitle: 'Professioneel Profiel',
+                profileText: 'Met een sterke basis in dierwetenschappen en lopende studies in Toegepaste Data Science en AI, specialiseer ik me in het ontwikkelen van voorspellende modellen en datagedreven oplossingen voor de veehouderijsector. Mijn werk richt zich op het optimaliseren van voeropnamevoorspellingen, het analyseren van koegezondheidsindicatoren en het verbeteren van bedrijfsvoering door innovatieve technologische toepassingen. Ik ben zeer nieuwsgierig naar onderzoek en verken voortdurend nieuwe manieren om wetenschappelijke methoden toe te passen op praktische agrarische uitdagingen.',
+                eduTitle: 'Opleiding',
+                eduDesc: 'Een uitgebreide educatieve reis die agrarische expertise combineert met moderne data science',
+                expTitle: 'Werkervaring',
+                expDesc: 'Een unieke mix van praktische agrarische ervaring en geavanceerde data science toepassingen',
+                skillsTitle: 'Vaardigheden & Expertise',
+                skillsDesc: 'Een uitgebreide vaardighedenset die traditionele landbouw verbindt met moderne data science',
+                projectsTitle: 'Uitgelichte Projecten',
+                projectsDesc: 'Onderzoeks- en ontwikkelingsprojecten die de toepassing van data science in de landbouw tonen',
+                contactTitle: 'Neem Contact Op',
+                contactDesc: 'Klaar om te praten over kansen in agrarische data science, samenwerking, of wil je gewoon verbinden? Ik hoor graag van je.',
+                opportunitiesTitle: 'Open voor Nieuwe Kansen',
+                opportunitiesText: 'Ik ben actief op zoek naar mogelijkheden om mijn unieke combinatie van agrarische expertise en data science vaardigheden toe te passen. Of je nu op zoek bent naar een data-analist, agrarisch consultant, of iemand die de kloof kan overbruggen tussen traditionele landbouw en moderne technologie, ik zou graag verkennen hoe we kunnen samenwerken.'
+            }
+        };
+        
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'nl' : 'en';
+            updateContent();
+        }
+        
+        function updateContent() {
+            const t = translations[currentLang];
+            
+            // Update all text elements
+            document.getElementById('lang-text').textContent = t.langText;
+            document.getElementById('hero-title').textContent = t.heroTitle;
+            document.getElementById('hero-desc').textContent = t.heroDesc;
+            document.getElementById('btn-contact').textContent = t.btnContact;
+            document.getElementById('btn-cv').textContent = t.btnCV;
+            document.getElementById('stat-exp').textContent = t.statExp;
+            document.getElementById('stat-expertise').textContent = t.statExpertise;
+            document.getElementById('stat-scope').textContent = t.statScope;
+            document.getElementById('about-title').textContent = t.aboutTitle;
+            document.getElementById('about-intro').textContent = t.aboutIntro;
+            document.getElementById('card-expert-title').textContent = t.cardExpertTitle;
+            document.getElementById('card-expert-desc').textContent = t.cardExpertDesc;
+            document.getElementById('card-scientist-title').textContent = t.cardScientistTitle;
+            document.getElementById('card-scientist-desc').textContent = t.cardScientistDesc;
+            document.getElementById('card-team-title').textContent = t.cardTeamTitle;
+            document.getElementById('card-team-desc').textContent = t.cardTeamDesc;
+            document.getElementById('card-innovation-title').textContent = t.cardInnovationTitle;
+            document.getElementById('card-innovation-desc').textContent = t.cardInnovationDesc;
+            document.getElementById('profile-title').textContent = t.profileTitle;
+            document.getElementById('profile-text').textContent = t.profileText;
+            document.getElementById('edu-title').textContent = t.eduTitle;
+            document.getElementById('edu-desc').textContent = t.eduDesc;
+            document.getElementById('exp-title').textContent = t.expTitle;
+            document.getElementById('exp-desc').textContent = t.expDesc;
+            document.getElementById('skills-title').textContent = t.skillsTitle;
+            document.getElementById('skills-desc').textContent = t.skillsDesc;
+            document.getElementById('projects-title').textContent = t.projectsTitle;
+            document.getElementById('projects-desc').textContent = t.projectsDesc;
+            document.getElementById('contact-title').textContent = t.contactTitle;
+            document.getElementById('contact-desc').textContent = t.contactDesc;
+            document.getElementById('opportunities-title').textContent = t.opportunitiesTitle;
+            document.getElementById('opportunities-text').textContent = t.opportunitiesText;
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = currentLang;
+        }
+    </script>
+</body>
 </html>
