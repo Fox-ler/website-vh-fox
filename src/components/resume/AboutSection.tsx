@@ -5,79 +5,79 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const AboutSection = () => {
   const { t } = useLanguage();
   return (
-    <section className="py-20 bg-gradient-section">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">{t('about.title')}</h2>
+    <section className="section-padding bg-background">
+      <div className="container mx-auto container-padding">
+        <div className="text-center mb-20">
+          <h2 className="font-bold text-foreground mb-6">{t('about.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {t('about.intro')}
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          <Card className="p-6 text-center bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300">
-            <div className="w-16 h-16 bg-agricultural-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Leaf className="w-8 h-8 text-agricultural-green" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+          <Card className="p-8 text-center bg-card border border-border/60 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-1 group">
+            <div className="w-20 h-20 bg-agricultural-green/10 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+              <Leaf className="w-10 h-10 text-agricultural-green" />
             </div>
-            <h3 className="font-semibold text-lg mb-2">{t('about.cards.expert.title')}</h3>
-            <p className="text-muted-foreground text-sm">{t('about.cards.expert.description')}</p>
+            <h3 className="font-semibold text-lg mb-3">{t('about.cards.expert.title')}</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">{t('about.cards.expert.description')}</p>
           </Card>
           
-          <Card className="p-6 text-center bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300">
-            <div className="w-16 h-16 bg-data-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <BarChart3 className="w-8 h-8 text-data-blue" />
+          <Card className="p-8 text-center bg-card border border-border/60 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-1 group">
+            <div className="w-20 h-20 bg-data-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+              <BarChart3 className="w-10 h-10 text-data-blue" />
             </div>
-            <h3 className="font-semibold text-lg mb-2">{t('about.cards.scientist.title')}</h3>
-            <p className="text-muted-foreground text-sm">{t('about.cards.scientist.description')}</p>
+            <h3 className="font-semibold text-lg mb-3">{t('about.cards.scientist.title')}</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">{t('about.cards.scientist.description')}</p>
           </Card>
           
-          <Card className="p-6 text-center bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300">
-            <div className="w-16 h-16 bg-earth-brown/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-earth-brown" />
+          <Card className="p-8 text-center bg-card border border-border/60 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-1 group">
+            <div className="w-20 h-20 bg-earth-brown/10 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+              <Users className="w-10 h-10 text-earth-brown" />
             </div>
-            <h3 className="font-semibold text-lg mb-2">{t('about.cards.team.title')}</h3>
-            <p className="text-muted-foreground text-sm">{t('about.cards.team.description')}</p>
+            <h3 className="font-semibold text-lg mb-3">{t('about.cards.team.title')}</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">{t('about.cards.team.description')}</p>
           </Card>
           
-          <Card className="p-6 text-center bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300">
-            <div className="w-16 h-16 bg-tech-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Target className="w-8 h-8 text-tech-accent" />
+          <Card className="p-8 text-center bg-card border border-border/60 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-1 group">
+            <div className="w-20 h-20 bg-tech-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+              <Target className="w-10 h-10 text-tech-accent" />
             </div>
-            <h3 className="font-semibold text-lg mb-2">{t('about.cards.innovation.title')}</h3>
-            <p className="text-muted-foreground text-sm">{t('about.cards.innovation.description')}</p>
+            <h3 className="font-semibold text-lg mb-3">{t('about.cards.innovation.title')}</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">{t('about.cards.innovation.description')}</p>
           </Card>
         </div>
         
-        <Card className="p-8 bg-gradient-card border-0 shadow-medium">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <Card className="p-10 bg-card border border-border/60 shadow-medium hover:shadow-large transition-all duration-500">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">Professional Profile</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-semibold mb-5 text-foreground">Professional Profile</h3>
+              <p className="text-muted-foreground leading-relaxed text-base">
                 {t('about.profile')}
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">{t('about.competencies')}</h3>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-agricultural-green rounded-full mr-3"></div>
-                  <span className="text-muted-foreground">Practical Agricultural Experience (Livestock farming, Agriculture)</span>
+              <h3 className="text-2xl font-semibold mb-5 text-foreground">{t('about.competencies')}</h3>
+              <div className="space-y-4">
+                <div className="flex items-start p-3 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors duration-200">
+                  <div className="w-2.5 h-2.5 bg-agricultural-green rounded-full mr-4 mt-2 flex-shrink-0"></div>
+                  <span className="text-muted-foreground leading-relaxed">Practical Agricultural Experience (Livestock farming, Agriculture)</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-data-blue rounded-full mr-3"></div>
-                  <span className="text-muted-foreground">Data Analysis & Visualization (Python, R, SQL, Excel, Power BI)</span>
+                <div className="flex items-start p-3 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors duration-200">
+                  <div className="w-2.5 h-2.5 bg-data-blue rounded-full mr-4 mt-2 flex-shrink-0"></div>
+                  <span className="text-muted-foreground leading-relaxed">Data Analysis & Visualization (Python, R, SQL, Excel, Power BI)</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-earth-brown rounded-full mr-3"></div>
-                  <span className="text-muted-foreground">Data Science & Machine Learning</span>
+                <div className="flex items-start p-3 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors duration-200">
+                  <div className="w-2.5 h-2.5 bg-earth-brown rounded-full mr-4 mt-2 flex-shrink-0"></div>
+                  <span className="text-muted-foreground leading-relaxed">Data Science & Machine Learning</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-tech-accent rounded-full mr-3"></div>
-                  <span className="text-muted-foreground">Communication & Teamwork</span>
+                <div className="flex items-start p-3 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors duration-200">
+                  <div className="w-2.5 h-2.5 bg-tech-accent rounded-full mr-4 mt-2 flex-shrink-0"></div>
+                  <span className="text-muted-foreground leading-relaxed">Communication & Teamwork</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-agricultural-green rounded-full mr-3"></div>
-                  <span className="text-muted-foreground">Project-based Work & Process Improvement</span>
+                <div className="flex items-start p-3 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors duration-200">
+                  <div className="w-2.5 h-2.5 bg-agricultural-green rounded-full mr-4 mt-2 flex-shrink-0"></div>
+                  <span className="text-muted-foreground leading-relaxed">Project-based Work & Process Improvement</span>
                 </div>
               </div>
             </div>

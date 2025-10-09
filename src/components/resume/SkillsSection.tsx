@@ -33,10 +33,10 @@ const SkillsSection = () => {
   };
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">{t('skills.title')}</h2>
+    <section className="section-padding bg-gradient-section">
+      <div className="container mx-auto container-padding">
+        <div className="text-center mb-20">
+          <h2 className="font-bold text-foreground mb-6">{t('skills.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('skills.description')}
           </p>
@@ -44,26 +44,26 @@ const SkillsSection = () => {
         
         <div className="max-w-6xl mx-auto">
           {/* Main Skills Categories */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
             {skillCategories.map((category, index) => {
               const IconComponent = category.icon;
               return (
-                <Card key={index} className="p-6 bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300">
-                  <div className="text-center mb-6">
-                    <div className={`w-16 h-16 bg-${category.color}/10 rounded-full flex items-center justify-center mx-auto mb-4`}>
-                      <IconComponent className={`w-8 h-8 text-${category.color}`} />
+                <Card key={index} className="p-8 bg-card border border-border/60 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-1 group">
+                  <div className="text-center mb-8">
+                    <div className={`w-20 h-20 bg-${category.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                      <IconComponent className={`w-10 h-10 text-${category.color}`} />
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
+                    <h3 className="text-2xl font-semibold text-foreground">{category.title}</h3>
                   </div>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-5">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <span className="font-medium text-foreground">{skill.name}</span>
-                          <Badge className={getLevelColor(skill.level)}>{skill.level}</Badge>
+                      <div key={skillIndex} className="space-y-2 p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors duration-200">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="font-semibold text-foreground">{skill.name}</span>
+                          <Badge className={`${getLevelColor(skill.level)} text-xs font-medium px-3 py-1`}>{skill.level}</Badge>
                         </div>
-                        <p className="text-sm text-muted-foreground">{skill.description}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{skill.description}</p>
                       </div>
                     ))}
                   </div>
@@ -75,25 +75,25 @@ const SkillsSection = () => {
           {/* Languages & Certifications */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Languages */}
-            <Card className="p-6 bg-gradient-card border-0 shadow-soft">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-earth-brown/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Languages className="w-8 h-8 text-earth-brown" />
+            <Card className="p-8 bg-card border border-border/60 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-1">
+              <div className="text-center mb-8">
+                <div className="w-20 h-20 bg-earth-brown/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                  <Languages className="w-10 h-10 text-earth-brown" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">{t('skills.languages')}</h3>
+                <h3 className="text-2xl font-semibold text-foreground">{t('skills.languages')}</h3>
               </div>
               
               <div className="space-y-4">
                 {languages.map((lang, index) => (
-                  <div key={index} className="flex items-center justify-between p-3 bg-background/50 rounded-lg">
+                  <div key={index} className="flex items-center justify-between p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-all duration-200 hover:scale-[1.02]">
                     <div className="flex items-center">
-                      <span className="text-2xl mr-3">{lang.flag}</span>
+                      <span className="text-3xl mr-4">{lang.flag}</span>
                       <div>
-                        <div className="font-medium text-foreground">{lang.name}</div>
-                        <div className="text-sm text-muted-foreground">{lang.description}</div>
+                        <div className="font-semibold text-foreground text-base">{lang.name}</div>
+                        <div className="text-sm text-muted-foreground mt-0.5">{lang.description}</div>
                       </div>
                     </div>
-                    <Badge variant="outline" className="bg-earth-brown/10 text-earth-brown border-earth-brown/20">
+                    <Badge variant="outline" className="bg-earth-brown/10 text-earth-brown border-earth-brown/30 text-xs font-medium px-3 py-1">
                       {lang.level}
                     </Badge>
                   </div>
@@ -102,22 +102,22 @@ const SkillsSection = () => {
             </Card>
             
             {/* Certifications */}
-            <Card className="p-6 bg-gradient-card border-0 shadow-soft">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-tech-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-tech-accent" />
+            <Card className="p-8 bg-card border border-border/60 shadow-soft hover:shadow-large transition-all duration-500 hover:-translate-y-1">
+              <div className="text-center mb-8">
+                <div className="w-20 h-20 bg-tech-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                  <Target className="w-10 h-10 text-tech-accent" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">{t('skills.certifications')}</h3>
+                <h3 className="text-2xl font-semibold text-foreground">{t('skills.certifications')}</h3>
               </div>
               
               <div className="space-y-4">
                 {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center justify-between p-3 bg-background/50 rounded-lg">
+                  <div key={index} className="flex items-center justify-between p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-all duration-200 hover:scale-[1.02]">
                     <div>
-                      <div className="font-medium text-foreground">{cert.name}</div>
-                      <div className="text-sm text-muted-foreground capitalize">{cert.type}</div>
+                      <div className="font-semibold text-foreground text-base">{cert.name}</div>
+                      <div className="text-sm text-muted-foreground capitalize mt-0.5">{cert.type}</div>
                     </div>
-                    <Badge variant="outline" className="bg-tech-accent/10 text-tech-accent border-tech-accent/20">
+                    <Badge variant="outline" className="bg-tech-accent/10 text-tech-accent border-tech-accent/30 text-xs font-medium px-3 py-1">
                       {cert.year}
                     </Badge>
                   </div>

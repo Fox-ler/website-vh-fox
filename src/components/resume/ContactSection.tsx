@@ -75,10 +75,10 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">{t('contact.title')}</h2>
+    <section className="section-padding bg-gradient-section">
+      <div className="container mx-auto container-padding">
+        <div className="text-center mb-20">
+          <h2 className="font-bold text-foreground mb-6">{t('contact.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('contact.description')}
           </p>
@@ -86,16 +86,16 @@ const ContactSection = () => {
         
         <div className="max-w-4xl mx-auto">
           {/* Contact Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {contactInfo.map((contact, index) => {
               const IconComponent = contact.icon;
               const content = (
-                <Card className="p-6 bg-gradient-card border-0 shadow-soft hover:shadow-medium transition-all duration-300 cursor-pointer group">
-                  <div className={`w-12 h-12 bg-${contact.color}/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-${contact.color}/20 transition-colors`}>
-                    <IconComponent className={`w-6 h-6 text-${contact.color}`} />
+                <Card className="p-8 bg-card border border-border/60 shadow-soft hover:shadow-xl transition-all duration-500 hover:-translate-y-2 cursor-pointer group">
+                  <div className={`w-16 h-16 bg-${contact.color}/10 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-${contact.color}/20 group-hover:scale-110 transition-all duration-300`}>
+                    <IconComponent className={`w-8 h-8 text-${contact.color}`} />
                   </div>
-                  <h3 className="font-semibold text-foreground text-center mb-2">{contact.label}</h3>
-                  <p className="text-sm text-muted-foreground text-center break-all">{contact.value}</p>
+                  <h3 className="font-semibold text-foreground text-center mb-3 text-base">{contact.label}</h3>
+                  <p className="text-sm text-muted-foreground text-center break-all leading-relaxed">{contact.value}</p>
                 </Card>
               );
               
@@ -112,8 +112,8 @@ const ContactSection = () => {
           </div>
           
           {/* Quick Actions */}
-          <Card className="p-8 bg-gradient-card border-0 shadow-medium mb-12">
-            <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">{t('contact.actions')}</h3>
+          <Card className="p-10 bg-card border border-border/60 shadow-medium hover:shadow-large transition-all duration-500 mb-16">
+            <h3 className="text-3xl font-semibold text-foreground mb-8 text-center">{t('contact.actions')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {quickActions.map((action, index) => {
                 const IconComponent = action.icon;
@@ -122,13 +122,13 @@ const ContactSection = () => {
                     key={index}
                     variant={action.variant}
                     size="lg"
-                    className={`h-auto p-6 flex-col gap-3 ${action.className}`}
+                    className={`h-auto p-8 flex-col gap-4 transition-all duration-300 hover:scale-105 hover:shadow-lg ${action.className}`}
                     onClick={action.onClick}
                   >
-                    <IconComponent className="w-6 h-6" />
+                    <IconComponent className="w-8 h-8" />
                     <div className="text-center">
-                      <div className="font-semibold">{action.label}</div>
-                      <div className="text-xs opacity-90 mt-1">{action.description}</div>
+                      <div className="font-semibold text-base mb-1">{action.label}</div>
+                      <div className="text-xs opacity-80 mt-1 leading-relaxed">{action.description}</div>
                     </div>
                   </Button>
                 );
@@ -137,25 +137,25 @@ const ContactSection = () => {
           </Card>
           
           {/* Professional Statement */}
-          <Card className="p-8 bg-gradient-card border-0 shadow-soft text-center">
-            <h3 className="text-xl font-semibold text-foreground mb-4">
+          <Card className="p-10 bg-card border border-border/60 shadow-soft hover:shadow-medium transition-all duration-500 text-center">
+            <h3 className="text-2xl font-semibold text-foreground mb-5">
               {t('contact.opportunities.title')}
             </h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-muted-foreground leading-relaxed mb-8 text-base max-w-2xl mx-auto">
               {t('contact.opportunities.statement')}
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-              <span className="flex items-center">
-                <div className="w-2 h-2 bg-agricultural-green rounded-full mr-2"></div>
-                {t('contact.opportunities.fullTime')}
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <span className="flex items-center p-3 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors duration-200">
+                <div className="w-2.5 h-2.5 bg-agricultural-green rounded-full mr-3"></div>
+                <span className="text-muted-foreground font-medium">{t('contact.opportunities.fullTime')}</span>
               </span>
-              <span className="flex items-center">
-                <div className="w-2 h-2 bg-data-blue rounded-full mr-2"></div>
-                {t('contact.opportunities.consulting')}
+              <span className="flex items-center p-3 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors duration-200">
+                <div className="w-2.5 h-2.5 bg-data-blue rounded-full mr-3"></div>
+                <span className="text-muted-foreground font-medium">{t('contact.opportunities.consulting')}</span>
               </span>
-              <span className="flex items-center">
-                <div className="w-2 h-2 bg-tech-accent rounded-full mr-2"></div>
-                {t('contact.opportunities.research')}
+              <span className="flex items-center p-3 rounded-lg bg-muted/20 hover:bg-muted/30 transition-colors duration-200">
+                <div className="w-2.5 h-2.5 bg-tech-accent rounded-full mr-3"></div>
+                <span className="text-muted-foreground font-medium">{t('contact.opportunities.research')}</span>
               </span>
             </div>
           </Card>

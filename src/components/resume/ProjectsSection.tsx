@@ -124,10 +124,10 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-section">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">{t('projects.title')}</h2>
+    <section className="section-padding bg-background">
+      <div className="container mx-auto container-padding">
+        <div className="text-center mb-20">
+          <h2 className="font-bold text-foreground mb-6">{t('projects.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('projects.description')}
           </p>

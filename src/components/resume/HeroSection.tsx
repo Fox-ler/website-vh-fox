@@ -6,30 +6,30 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const HeroSection = () => {
   const { t } = useLanguage();
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-hero opacity-85" />
+        <div className="absolute inset-0 bg-gradient-hero opacity-90" />
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+      <div className="relative z-10 container mx-auto container-padding text-center text-white py-20">
+        <h1 className="font-bold mb-8 leading-tight animate-fadeIn">
           {t('hero.title')}
         </h1>
         
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed opacity-95 animate-fadeIn" style={{ animationDelay: '100ms' }}>
           {t('hero.description')}
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fadeIn" style={{ animationDelay: '200ms' }}>
           <Button 
             variant="secondary" 
             size="lg" 
-            className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm"
+            className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             <Mail className="mr-2 h-5 w-5" />
             {t('hero.contact')}
@@ -38,7 +38,7 @@ const HeroSection = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="bg-transparent text-white border-white/50 hover:bg-white/20 backdrop-blur-sm"
+            className="bg-white/10 text-white border-white/40 hover:bg-white/20 backdrop-blur-md transition-all duration-300 hover:scale-105"
           >
             <Linkedin className="mr-2 h-5 w-5" />
             LinkedIn
@@ -47,7 +47,7 @@ const HeroSection = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="bg-transparent text-white border-white/50 hover:bg-white/20 backdrop-blur-sm"
+            className="bg-white/10 text-white border-white/40 hover:bg-white/20 backdrop-blur-md transition-all duration-300 hover:scale-105"
           >
             <Download className="mr-2 h-5 w-5" />
             {t('hero.downloadCV')}
@@ -55,18 +55,18 @@ const HeroSection = () => {
         </div>
         
         {/* Key Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-            <div className="text-3xl font-bold text-tech-accent mb-2">8+</div>
-            <div className="text-sm uppercase tracking-wide">{t('hero.stats.experience')}</div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto animate-fadeIn" style={{ animationDelay: '300ms' }}>
+          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div className="text-4xl font-bold mb-3 text-white">8+</div>
+            <div className="text-sm uppercase tracking-wider text-white/90 font-medium">{t('hero.stats.experience')}</div>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-            <div className="text-3xl font-bold text-tech-accent mb-2">Data</div>
-            <div className="text-sm uppercase tracking-wide">{t('hero.stats.expertise')}</div>
+          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div className="text-4xl font-bold mb-3 text-white">Data</div>
+            <div className="text-sm uppercase tracking-wider text-white/90 font-medium">{t('hero.stats.expertise')}</div>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-            <div className="text-3xl font-bold text-tech-accent mb-2">Dutch</div>
-            <div className="text-sm uppercase tracking-wide">{t('hero.stats.scope')}</div>
+          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div className="text-4xl font-bold mb-3 text-white">Dutch</div>
+            <div className="text-sm uppercase tracking-wider text-white/90 font-medium">{t('hero.stats.scope')}</div>
           </div>
         </div>
       </div>
