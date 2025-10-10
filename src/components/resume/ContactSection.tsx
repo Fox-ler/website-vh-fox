@@ -9,15 +9,15 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: t('contact.info.email'),
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com?subject=Agricultural Data Science Opportunity",
+      value: "vincentfox2001@hotmail.com",
+      href: "mailto:vincentfox2001@hotmail.com?subject=GetInContact",
       color: "data-blue"
     },
     {
       icon: Linkedin,
       label: t('contact.info.linkedin'),
       value: "linkedin.com/in/yourprofile",
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://www.linkedin.com/in/vincent-fox-45aa96130/",
       color: "tech-accent"
     },
     {
@@ -30,8 +30,8 @@ const ContactSection = () => {
     {
       icon: Phone,
       label: t('contact.info.phone'),
-      value: "+31 (0) 123 456 789",
-      href: "tel:+31123456789",
+      value: "+31 (06) 23 68 50 71",
+      href: "tel:+3123685071",
       color: "earth-brown"
     }
   ];
