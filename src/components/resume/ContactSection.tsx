@@ -69,7 +69,7 @@ const ContactSection = () => {
       variant: "outline" as const,
       className: "border-tech-accent text-tech-accent hover:bg-tech-accent/5",
       onClick: () => {
-        window.open("https://linkedin.com/in/yourprofile", "_blank");
+        window.open("https://www.linkedin.com/in/vincent-fox-45aa96130/", "_blank");
       }
     }
   ];
