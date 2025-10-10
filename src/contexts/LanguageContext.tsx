@@ -653,7 +653,7 @@ const translations = {
       ],
       futureProjects: [
         {
-          title: "Geautomatiseerd Vee Gezondheidsmonitoring Systeem",
+          title: "Geautomatiseerd Vee Gezondheidsmonitoring Systeem..",
           description: "IoT-gebaseerd systeem dat sensorgegevens combineert met machine learning voor vroege ziektedetectie",
           technologies: ["IoT", "Python", "Computer Vision", "Tijdreeksanalyse"],
           color: "tech-accent"
