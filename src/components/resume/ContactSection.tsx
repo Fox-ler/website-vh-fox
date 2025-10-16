@@ -10,7 +10,7 @@ const ContactSection = () => {
       icon: Mail,
       label: t('contact.info.email'),
       value: "vincentfox2001@hotmail.com",
-      href: "mailto:vincentfox2001@hotmail.com?subject=GetInContact",
+      href: "mailto:vincentfox2001@hotmail.com",
       color: "data-blue"
     },
     {

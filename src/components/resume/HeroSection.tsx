@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Download } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-agriculture-data.jpg';
 import { useLanguage } from '@/contexts/LanguageContext';
