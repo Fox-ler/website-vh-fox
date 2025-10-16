@@ -59,7 +59,7 @@ const ContactSection = () => {
       variant: "outline" as const,
       className: "border-data-blue text-data-blue hover:bg-data-blue/5",
       onClick: () => {
-        window.location.href = "mailto:your.email@example.com?subject=Agricultural Data Science Opportunity&body=Hello, I'm interested in discussing potential opportunities in agricultural data science.";
+        window.location.href = "mailto:vincentfox2001@hotmail.com?subject=Agricultural Data Science Opportunity&body=Hello, I'm interested in discussing potential opportunities in agricultural data science.";
       }
     },
     {

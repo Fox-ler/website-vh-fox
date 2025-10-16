@@ -30,6 +30,7 @@ const HeroSection = () => {
             variant="secondary" 
             size="lg" 
             className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            onClick={() => window.location.href = 'mailto:vincentfox2001@hotmail.com'}
           >
             <Mail className="mr-2 h-5 w-5" />
             {t('hero.contact')}
@@ -39,18 +40,10 @@ const HeroSection = () => {
             variant="outline" 
             size="lg"
             className="bg-white/10 text-white border-white/40 hover:bg-white/20 backdrop-blur-md transition-all duration-300 hover:scale-105"
+            onClick={() => window.open('https://www.linkedin.com/in/vincent-fox-45aa96130/', '_blank')}
           >
             <Linkedin className="mr-2 h-5 w-5" />
             LinkedIn
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="bg-white/10 text-white border-white/40 hover:bg-white/20 backdrop-blur-md transition-all duration-300 hover:scale-105"
-          >
-            <Download className="mr-2 h-5 w-5" />
-            {t('hero.downloadCV')}
           </Button>
         </div>
         
