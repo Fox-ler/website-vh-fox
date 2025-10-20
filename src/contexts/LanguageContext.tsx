@@ -604,7 +604,7 @@ const translations = {
       projects: [
         {
           title: "Mixed Method Scriptie: Kruidenrijk Grasland Analyse",
-          description: "Uitgebreid onderzoeksproject dat data mining technieken combineert met agrarische veldstudies om de impact van kruidenrijk grasland op veevoeding en bedrijfsproductiviteit te analyseren. Voorspellende modellen ontwikkeld op basis van voeropnamepatronen en voedingsresultaten.",
+          description: "Uitgebreid onderzoeksproject dat data mining technieken combineert met agrarische veldstudies om de implementatie van kruidenrijk grasland te analyseren. Dit onderzoeksrapport is het resultaat van inspanningen om inzicht te verkrijgen in de motivaties, barrières en ondersteuningsbehoeften van veehouders bij de implementatie van kruidenrijk grasland. De centrale hoofdvraag luidt: "Welke motivaties en barrières ervaren melkveehouders bij de implementatie en het beheer van kruidenrijk grasland, en welke vormen van ondersteuning en samenwerking kunnen bijdragen aan succesvolle adoptie?" Er is gebruikgemaakt van een mixed-methode benadering, waarbij zowel kwalitatief als kwantitatief onderzoek is ingezet. Dit omvatte onder meer een focusgroep en analysemethoden zoals tekstmining en clustering. Deelnemers aan de focusgroep vertegenwoordigden een breed scala aan perspectieven.",
           type: "Academisch Onderzoek",
           status: "Afgerond",
           technologies: ["Python", "Data Mining", "Statistische Analyse", "Agrarisch Onderzoek", "Voorspellende Modellering"],
